@@ -1,0 +1,13 @@
+//global
+@use "./global/fonts" as *;
+@use "./global/variables" as *;
+@use "./global/viewports" as *;
+@use "./global/visually-hidden" as *;
+@use "./global/button";
+@use "./global/basic" as *;
+@use "./global/mixin" as *;
+@use "./global/container";
+//components
+@use "./components/nav";
+@use "./components/catalog-btn";
+@use "./components/search";

@@ -1,0 +1,14 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+
+.button {
+  background-color: $brown-primary;
+  display: flex;
+  font-family: $rubik;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $white;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,42 @@
+@use "sass:map";
+@use "../global/viewports" as *;
+
+@mixin adaptive($type) {
+  @if $type == mobile {
+    @media (min-width: map.get($sizes, mobile-min)) and (max-width: map.get($sizes, mobile-max)) {
+      @content;
+    }
+  } @else if $type == tablet {
+    @media (min-width: map.get($sizes, tablet-min)) and (max-width: map.get($sizes, tablet-max)) {
+      @content;
+    }
+  } @else if $type == desktop {
+    @media (min-width: map.get($sizes, desktop-min)) {
+      @content;
+    }
+  }
+}
+
+@mixin mobile {
+  @include adaptive(mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include adaptive(tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include adaptive(desktop) {
+    @content;
+  }
+}
+
+@mixin container {
+  @include adaptive (mobile) {
+    padding: 0 16px;
+  }
+}

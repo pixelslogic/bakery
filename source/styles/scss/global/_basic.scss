@@ -1,0 +1,46 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  color: $black;
+  font-family: $rubik;
+  overflow-wrap: anywhere;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}

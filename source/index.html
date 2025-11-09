@@ -7,8 +7,83 @@
   <script type="module" crossorigin src="./js/main.js"></script>
 </head>
 <body>
-  <header>
-    
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__wrapper-one">
+          <a class="nav__link nav__link--logo" href="#">
+            <svg class="nav__svg" width="40" height="35">
+              <use href="./assets/images/icon/sprite.svg#logo"></use>
+            </svg>
+            <span class="nav__text nav__text--logo">
+              Тёплый Хлеб
+            </span>
+          </a>
+
+          <button class="catalog-btn button" type="button" aria-label="catalog button">
+            <svg class="catalog-btn__svg catalog-btn__svg--open" width="24" height="24n">
+              <use href="./assets/images/icon/sprite.svg#burger"></use>
+            </svg>
+
+            <svg class="catalog-btn__svg catalog-btn__svg--close" width="24" height="24">
+              <use href="./assets/images/icon/sprite.svg#burger-close"></use>
+            </svg>
+            <span class="catalog-btn__text">Каталог</span>
+          </button>
+
+          <form class="search" action="#" method="get">
+            <button type="submit" class="search__btn" aria-label="Поиск">
+              <svg class="search__icon" width="20" height="20">
+                <use href="./assets/images/icon/sprite.svg#search"></use>
+              </svg>
+            </button>
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Найти товар"
+              name="q">
+          </form>
+        </div>
+
+        <div class="nav__wrapper-two">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#heart"></use>
+                </svg>
+                <span class="nav__text">Избранное</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#box"></use>
+                </svg>
+                <span class="nav__text">Заказы</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#orders"></use>
+                </svg>
+                <span class="nav__text">Корзина</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <div class="nav__link nav__link--user">
+                <img class="nav__img" src="./assets/images/img/nav/avatar.png" alt="user photo" width="40" height="40">
+                <span class="nav__text nav__text--user">Пользователь</span>
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
 
