@@ -1,0 +1,16 @@
+@use "../global/variables" as *;
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  padding-right: 24px;
+  align-items: center;
+}
+
+.logo__text {
+  line-height: 150%;
+  font-weight: bold;
+  font-size: 18px;
+  color: $brown-secondary;
+}

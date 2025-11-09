@@ -1,6 +1,6 @@
 @use "../global/viewports" as *;
 @use "../global/mixin" as *;
 
-// .container {
-//   @include m.container;
-// }
+.container {
+  @include container;
+}

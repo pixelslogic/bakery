@@ -11,11 +11,11 @@
     <div class="container">
       <nav class="nav">
         <div class="nav__wrapper-one">
-          <a class="nav__link nav__link--logo" href="#">
-            <svg class="nav__svg" width="40" height="35">
+          <a class="logo" href="#">
+            <svg class="logo__svg" width="40" height="35">
               <use href="./assets/images/icon/sprite.svg#logo"></use>
             </svg>
-            <span class="nav__text nav__text--logo">
+            <span class="logo__text">
               Тёплый Хлеб
             </span>
           </a>
@@ -37,11 +37,7 @@
                 <use href="./assets/images/icon/sprite.svg#search"></use>
               </svg>
             </button>
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Найти товар"
-              name="q">
+            <input type="text" class="search__input" placeholder="Найти товар">
           </form>
         </div>
 
@@ -88,8 +84,64 @@
   <main>
 
   </main>
-  <footer>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a class="logo" href="#">
+          <svg class="logo__svg" width="40" height="35">
+            <use href="./assets/images/icon/sprite.svg#logo"></use>
+          </svg>
+          <span class="logo__text">
+            Тёплый Хлеб
+          </span>
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer-site">
+            <li>
+              <a class="footer-site__link" href="#visiting">О компании</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#explore">Контакты</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#video">Вакансии</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#gallery">Статьи</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#tickets">Политика обработки персональных данных</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">instagram link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">vkontakte link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/images/icon/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts__info">
+          <a class="contacts__link" href="tel:+88005557575">
+            <svg class="social__svg" width="24" height="24">
+              <use href="./assets/images/icon/sprite.svg#phone"></use>
+            </svg>
+            <span class="contacts__text">8 800 555 75 75</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

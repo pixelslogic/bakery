@@ -1,0 +1,18 @@
+@use "../global/variables" as *;
+
+.footer {
+  padding: 46px 0;
+  background-color: $bg-footer;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
