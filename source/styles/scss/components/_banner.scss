@@ -1,0 +1,26 @@
+@use "../global/variables" as *;
+
+.banner {
+  background-image: url("../assets/images/img/banner/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bg;
+  background-size: cover;
+  max-width: 75.5rem;
+  width: 100%;
+  min-height: 12.5rem;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.banner__title {
+  margin-top: 1rem;
+}

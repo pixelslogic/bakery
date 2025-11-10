@@ -1,0 +1,35 @@
+@use "../global/variables" as *;
+
+.promo__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 84px 0 40px 0;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 150%;
+  margin: 0;
+}
+
+.promo__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  background-color: transparent;
+  border: none;
+  font-family: $rubik;
+  color: $black;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
