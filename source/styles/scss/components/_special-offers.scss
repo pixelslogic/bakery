@@ -1,0 +1,71 @@
+@use "../global/variables" as *;
+
+.special-offers {
+  margin: 120px 0;
+}
+
+.special-offers__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.special-offers__item {
+  width: 36.5rem;
+  height: 12.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 40px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+
+  &--rose {
+    background-color: $special-offer-rose;
+  }
+
+  &--green {
+    background-color: $special-offer-green;
+  }
+}
+
+.special-offers__subtitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: $black;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.special-offers__text,
+.special-offers__tag {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.special-offers__wrapper {
+  max-width: 265px;
+}
+
+.special-offers__image {
+
+  &--rose {
+    filter: drop-shadow(0 4px 10px rgba(200, 90, 53, 0.51));
+  }
+
+  &--green {
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.special-offers__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 150%;
+  margin: 0 0 40px;
+}

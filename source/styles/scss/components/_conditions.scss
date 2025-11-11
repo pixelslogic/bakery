@@ -1,0 +1,51 @@
+@use "../global/variables" as *;
+
+.conditions {
+  margin: 120px 0 40px;
+}
+
+.conditions__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $rubik;
+  color: $black;
+}
+
+.conditions__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $bg;
+  background-size: cover;
+  max-width: 36rem;
+  width: 100%;
+  height: 33rem;
+  border-radius: 8px;
+
+  &--first {
+    background-image: url("../assets/images/img/conditions/img-1.jpg");
+  }
+
+  &--second {
+    background-image: url("../assets/images/img/conditions/img-2.jpg");
+  }
+}
+
+.conditions__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conditions__subtitle {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+  color: $white;
+  margin: 1.5rem 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

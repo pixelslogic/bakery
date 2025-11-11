@@ -79,9 +79,9 @@
           </ul>
         </div>
       </nav>
-      <div class="banner">
-        <h2 class="banner__title">Вся выпечка со скидкой 20%<br>после 20:00</h2>
-      </div>
+    </div>
+    <div class="banner">
+      <h2 class="banner__title">Вся выпечка со скидкой 20%<br>после 20:00</h2>
     </div>
   </header>
   <main class="main">
@@ -268,6 +268,7 @@
               <div class="product-card">
                 <div class="product-card__image">
                   <img src="./assets/images/img/new/choco-cake.png" alt="user photo" width="272" height="160">
+                  <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -300,6 +301,7 @@
               <div class="product-card">
                 <div class="product-card__image">
                   <img src="./assets/images/img/new/berry-cake.png" alt="user photo" width="272" height="160">
+                  <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -332,6 +334,7 @@
               <div class="product-card">
                 <div class="product-card__image">
                   <img src="./assets/images/img/new/raspberry-muffin.png" alt="user photo" width="272" height="160">
+                  <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -364,6 +367,7 @@
               <div class="product-card">
                 <div class="product-card__image">
                   <img src="./assets/images/img/new/sandwich.png" alt="user photo" width="272" height="160">
+                  <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -532,6 +536,55 @@
                 </div>
               </div>
             </a>
+          </li>
+        </ul>
+      </section>
+      <section class="special-offers">
+        <h2 class="special-offers__title">Специальные предложения</h2>
+        <ul class="special-offers__list">
+          <li class="special-offers__item special-offers__item--rose">
+            <div class="special-offers__wrapper">
+              <h3 class="special-offers__subtitle">+100 бонусов при регистрации</h3>
+              <p class="special-offers__text">Копите и оплачивайте вкусные покупки своими бонусами!</p>
+              <span class="special-offers__tag">1 бонус = 1 рубль скидки</span>
+            </div>
+            <div class="special-offers__wrapper">
+              <img class="special-offers__image special-offers__image--rose" src="./assets/images/img/offers/offer-1.png" alt="discount in the mobile version of the app" width="195" height="185">
+            </div>
+          </li>
+          <li class="special-offers__item special-offers__item--green">
+            <div class="special-offers__wrapper">
+              <h3 class="special-offers__subtitle">Кофе + десерт</h3>
+              <p class="special-offers__text">Ароматный капучино и пирожное дня — всего за 350 ₽. Отличное утро начинается здесь!</p>
+            </div>
+            <div class="special-offers__wrapper">
+              <img class="special-offers__image special-offers__image--green" src="./assets/images/img/offers/offer-2.png" alt="coffee and cake promotion" width="223" height="169">
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <h2 class="map__title">Наши магазины</h2>
+        <div class="map__wrapper">
+          <div class="map__buttons">
+            <button class="map__btn map__btn--active" type="button">г.Петрозаводск</button>
+            <button class="map__btn" type="button">г.Олонец</button>
+            <button class="map__btn" type="button">г.Сортавала</button>
+            <button class="map__btn" type="button">г.Пудож</button>
+          </div>
+          <div class="map__image">
+            <img src="./assets/images/img/map/map.jpg" alt="map" width="1120" height="400">
+          </div>
+        </div>
+      </section>
+      <section class="conditions">
+        <h2 class="conditions__title">Приятные условия для любимых клиентов</h2>
+        <ul class="conditions__list">
+          <li class="conditions__item conditions__item--first">
+            <h3 class="conditions__subtitle">Тёплый подарок ко дню рождения — скидка 10%</h3>
+          </li>
+          <li class="conditions__item conditions__item--second">
+            <h3 class="conditions__subtitle">Вкусное рядом: доставка всего 350 ₽ или бесплатно от 1500 ₽</h3>
           </li>
         </ul>
       </section>
