@@ -1,14 +1,12 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .banner {
-  background-image: url("../assets/images/img/banner/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $bg;
   background-size: cover;
-  max-width: 80.5rem;
   width: 100%;
-  min-height: 12.5rem;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -23,4 +21,28 @@
 
 .banner__title {
   margin-top: 1rem;
+}
+
+@include desktop {
+  .banner {
+    max-width: 80.5rem;
+    min-height: 12.5rem;
+    background-image: url("../assets/images/img/banner/bg.jpg");
+  }
+}
+
+@include tablet {
+  .banner {
+    max-width: 48rem;
+    min-height: 12.5rem;
+    background-image: url("../assets/images/img/banner/bg-tablet.jpg");
+  }
+}
+
+@include mobile {
+  .banner {
+    max-width: 20rem;
+    min-height: 12.5rem;
+    background-image: url("../assets/images/img/banner/bg-mobile.jpg");
+  }
 }

@@ -69,7 +69,11 @@
             </li>
             <li class="nav__item">
               <div class="nav__link nav__link--user">
-                <img class="nav__img" src="./assets/images/img/nav/avatar.png" alt="user photo" width="40" height="40">
+                <picture>
+                  <!-- <source srcset="./assets/images/img/nav/avatar.webp 1x" type="image/webp"> -->
+                  <source srcset="./assets/images/img/nav/avatar.png 1x" type="image/jpeg">
+                  <img class="nav__img" src="./assets/images/img/nav/avatar.png" alt="user photo" width="40" height="40">
+                </picture>
                 <span class="nav__text nav__text--user">Пользователь</span>
                 <svg class="nav__svg" width="24" height="24">
                   <use href="./assets/images/icon/sprite.svg#arrow"></use>
@@ -86,22 +90,26 @@
   </header>
   <main class="main">
     <div class="container">
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">Акции</h2>
-          <button class="promo__text">
-            <span class="promo__subtitle">Все акции</span>
-            <svg class="promo__svg" width="24" height="24">
+      <section class="card">
+        <div class="card__wrapper">
+          <h2 class="card__title">Акции</h2>
+          <button class="card__text">
+            <span class="card__subtitle">Все акции</span>
+            <svg class="card__svg" width="24" height="24">
               <use href="./assets/images/icon/sprite.svg#arrow"></use>
             </svg>
           </button>
         </div>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+        <ul class="card__list">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/promo/medovik.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/promo/medovik.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/promo/medovik.png 1x">
+                    <img src="./assets/images/img/promo/medovik.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">-6%</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -126,7 +134,7 @@
 
                   <div class="product-card__rating">
                     <svg class="product-card__star" width="16" height="16">
-                      <use href="./assets/images/icon/sprite.svg#star" fill="currentColor"></use>
+                      <use href="./assets/images/icon/sprite.svg#star"></use>
                     </svg>
                   </div>
 
@@ -135,11 +143,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/promo/bread.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/promo/bread.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/promo/bread.png 1x">
+                    <img src="./assets/images/img/promo/bread.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">-13%</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -173,11 +185,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/promo/pie.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/promo/pie.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/promo/pie.png 1x">
+                    <img src="./assets/images/img/promo/pie.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">-7%</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -211,11 +227,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item card__item--hidden">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/promo/donut.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/promo/donut.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/promo/donut.png 1x">
+                    <img src="./assets/images/img/promo/donut.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">-11%</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -252,22 +272,26 @@
         </ul>
       </section>
 
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">Новинки</h2>
-          <button class="promo__text">
-            <span class="promo__subtitle">Все новинки</span>
-            <svg class="promo__svg" width="24" height="24">
+      <section class="card">
+        <div class="card__wrapper">
+          <h2 class="card__title">Новинки</h2>
+          <button class="card__text">
+            <span class="card__subtitle">Все новинки</span>
+            <svg class="card__svg" width="24" height="24">
               <use href="./assets/images/icon/sprite.svg#arrow"></use>
             </svg>
           </button>
         </div>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+        <ul class="card__list">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/new/choco-cake.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/new/choco-cake.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/new/choco-cake.png 1x">
+                    <img src="./assets/images/img/new/choco-cake.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -296,11 +320,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/new/berry-cake.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/new/berry-cake.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/new/berry-cake.png 1x">
+                    <img src="./assets/images/img/new/berry-cake.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -329,11 +357,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/new/raspberry-muffin.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/new/raspberry-muffin.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/new/raspberry-muffin.png 1x">
+                    <img src="./assets/images/img/new/raspberry-muffin.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -362,11 +394,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item card__item--hidden">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/new/sandwich.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/new/sandwich.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/new/sandwich.png 1x">
+                    <img src="./assets/images/img/new/sandwich.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <span class="product-card__discount">NEW</span>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
@@ -398,22 +434,26 @@
         </ul>
       </section>
 
-      <section class="promo">
-        <div class="promo__wrapper">
-          <h2 class="promo__title">Покупали раньше</h2>
-          <button class="promo__text">
-            <span class="promo__subtitle">Все покупки</span>
-            <svg class="promo__svg" width="24" height="24">
+      <section class="card">
+        <div class="card__wrapper">
+          <h2 class="card__title">Покупали раньше</h2>
+          <button class="card__text">
+            <span class="card__subtitle">Все покупки</span>
+            <svg class="card__svg" width="24" height="24">
               <use href="./assets/images/icon/sprite.svg#arrow"></use>
             </svg>
           </button>
         </div>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+        <ul class="card__list">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/purchased/sirniki.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/purchased/sirniki.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/purchased/sirniki.png 1x">
+                    <img src="./assets/images/img/purchased/sirniki.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -441,11 +481,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/purchased/tiramisu.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/purchased/tiramisu.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/purchased/tiramisu.png 1x">
+                    <img src="./assets/images/img/purchased/tiramisu.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -473,11 +517,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/purchased/blini.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/purchased/blini.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/purchased/blini.png 1x">
+                    <img src="./assets/images/img/purchased/blini.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -505,11 +553,15 @@
               </div>
             </a>
           </li>
-          <li class="promo__item">
-            <a class="promo__link" href="#">
+          <li class="card__item card__item--hidden">
+            <a class="card__link" href="#">
               <div class="product-card">
                 <div class="product-card__image">
-                  <img src="./assets/images/img/purchased/pirozhok.png" alt="user photo" width="272" height="160">
+                  <picture>
+                    <!-- <source type="image/webp" srcset="./assets/images/img/purchased/pirozhok.webp 1x"> -->
+                    <source type="image/jpeg" srcset="./assets/images/img/purchased/pirozhok.png 1x">
+                    <img src="./assets/images/img/purchased/pirozhok.png" alt="user photo" width="272" height="160">
+                  </picture>
                   <button class="product-card__favorite" aria-label="Добавить в избранное">
                     <svg class="product-card__favorite-svg" width="24" height="24">
                       <use href="./assets/images/icon/sprite.svg#heart"></use>
@@ -549,7 +601,11 @@
               <span class="special-offers__tag">1 бонус = 1 рубль скидки</span>
             </div>
             <div class="special-offers__wrapper">
-              <img class="special-offers__image special-offers__image--rose" src="./assets/images/img/offers/offer-1.png" alt="discount in the mobile version of the app" width="195" height="185">
+              <picture>
+                <!-- <source type="image/webp" srcset="./assets/images/img/offers/offer-1.webp 1x"> -->
+                <source type="image/jpeg" srcset="./assets/images/img/offers/offer-1.png 1x">
+                <img class="special-offers__image special-offers__image--rose" src="./assets/images/img/offers/offer-1.png" alt="discount in the mobile version of the app" width="195" height="185">
+              </picture>
             </div>
           </li>
           <li class="special-offers__item special-offers__item--green">
@@ -558,7 +614,11 @@
               <p class="special-offers__text">Ароматный капучино и пирожное дня — всего за 350 ₽. Отличное утро начинается здесь!</p>
             </div>
             <div class="special-offers__wrapper">
-              <img class="special-offers__image special-offers__image--green" src="./assets/images/img/offers/offer-2.png" alt="coffee and cake promotion" width="223" height="169">
+              <picture>
+                <!-- <source type="image/webp" srcset="./assets/images/img/offers/offer-2.webp 1x"> -->
+                <source type="image/jpeg" srcset="./assets/images/img/offers/offer-2.png 1x">
+                <img class="special-offers__image special-offers__image--green" src="./assets/images/img/offers/offer-2.png" alt="coffee and cake cardtion" width="223" height="169">
+              </picture>
             </div>
           </li>
         </ul>
@@ -573,7 +633,15 @@
             <button class="map__btn" type="button">г.Пудож</button>
           </div>
           <div class="map__image">
-            <img src="./assets/images/img/map/map.jpg" alt="map" width="1120" height="400">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width:1280px)" srcset="./assets/images/img/map/map.webp" width="1120" height="400"> -->
+              <source type="image/jpeg" media="(min-width:1280px)" srcset="./assets/images/img/map/map.jpg" width="1120" height="400">
+              <!-- <source type="image/webp" media="(min-width:768px)" srcset="./assets/images/img/map/map-tablet.webp" width="728" height="354"> -->
+              <source type="image/jpeg" media="(min-width:768px)" srcset="./assets/images/img/map/map-tablet.jpg" width="728" height="354">
+              <!-- <source type="image/webp" media="(max-width:767px)" srcset="./assets/images/img/map/map-mobile.webp" width="288" height="354"> -->
+              <source type="image/jpeg" media="(max-width:767px)" srcset="./assets/images/img/map/map-mobile.jpg" width="288" height="354">
+              <img src="./assets/images/img/map/map-mobile.jpg" alt="Карта" width="1120" height="400" loading="lazy">
+            </picture>
           </div>
         </div>
       </section>

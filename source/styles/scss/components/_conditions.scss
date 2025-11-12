@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .conditions {
   margin: 120px 0 40px;
@@ -48,4 +49,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@include tablet {
+  .conditions__list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .conditions__item {
+    max-width: 45.5rem;
+    height: 27.5rem;
+
+    &--first {
+      background-image: url("../assets/images/img/conditions/img-1-tablet.jpg");
+    }
+
+    &--second {
+      background-image: url("../assets/images/img/conditions/img-2-tablet.jpg");
+    }
+  }
+}
+
+@include mobile {
+  .conditions__list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .conditions__item {
+    max-width: 18rem;
+    height: 27.5rem;
+
+    &--first {
+      background-image: url("../assets/images/img/conditions/img-1-mobile.jpg");
+    }
+
+    &--second {
+      background-image: url("../assets/images/img/conditions/img-2-mobile.jpg");
+    }
+  }
 }

@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .product-card {
   width: 17rem;
@@ -142,4 +143,12 @@
 
 .product-card__star {
   color: red;
+}
+
+
+@include tablet {
+  .product-card {
+    width: 14.06rem;
+    height: 21.81rem;
+  }
 }

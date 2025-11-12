@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .special-offers {
   margin: 120px 0;
@@ -68,4 +69,12 @@
   font-size: 2.25rem;
   line-height: 150%;
   margin: 0 0 40px;
+}
+
+@include tablet {
+  .special-offers__list {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
 }
