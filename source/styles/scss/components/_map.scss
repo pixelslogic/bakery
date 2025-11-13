@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .map__image img {
   width: 100%;
@@ -30,6 +31,7 @@
   flex-direction: row;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .map__title {
@@ -38,4 +40,10 @@
   line-height: 150%;
   margin: 0;
   margin-bottom: 2.5rem;
+}
+
+@include mobile {
+  .map__title {
+    font-size: 1.7rem;
+  }
 }

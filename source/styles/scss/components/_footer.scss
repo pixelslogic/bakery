@@ -15,6 +15,20 @@
 .footer__nav {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 2.5rem;
   align-items: center;
+}
+
+@include mobile {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer__nav {
+    display: contents;
+  }
 }

@@ -25,3 +25,16 @@
     padding-right: 0;
   }
 }
+
+@include mobile {
+  .logo__text {
+    display: none;
+  }
+
+  .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding-right: 0;
+    order: 1;
+  }
+}

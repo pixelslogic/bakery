@@ -35,13 +35,14 @@
   .banner {
     max-width: 48rem;
     min-height: 12.5rem;
+    font-size: 2rem;
     background-image: url("../assets/images/img/banner/bg-tablet.jpg");
   }
 }
 
 @include mobile {
   .banner {
-    max-width: 20rem;
+    font-size: 1.38rem;
     min-height: 12.5rem;
     background-image: url("../assets/images/img/banner/bg-mobile.jpg");
   }

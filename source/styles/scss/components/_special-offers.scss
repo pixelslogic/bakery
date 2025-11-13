@@ -78,3 +78,30 @@
     align-items: center;
   }
 }
+
+@include mobile {
+  .special-offers__list {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .special-offers__wrapper {
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .special-offers__item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .special-offers {
+    margin: 5rem 0;
+  }
+
+  .special-offers__title {
+    font-size: 1.7rem;
+  }
+}

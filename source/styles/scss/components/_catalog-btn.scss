@@ -31,3 +31,21 @@
     height: 2.5rem;
   }
 }
+
+@include mobile {
+  .catalog-btn__svg {
+    &--open {
+      display: block;
+    }
+  }
+
+  .catalog-btn__text {
+    display: none;
+  }
+
+  .catalog-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    order: 3;
+  }
+}

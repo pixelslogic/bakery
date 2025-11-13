@@ -78,7 +78,7 @@
   }
 
   .conditions__item {
-    max-width: 18rem;
+    width: 100%;
     height: 27.5rem;
 
     &--first {
@@ -88,5 +88,18 @@
     &--second {
       background-image: url("../assets/images/img/conditions/img-2-mobile.jpg");
     }
+  }
+
+  .conditions {
+    margin: 5rem 0 2.5rem;
+  }
+
+  .conditions__title {
+    font-size: 1.7rem;
+  }
+
+  .conditions__subtitle {
+    margin: 1.5rem 1rem;
+    font-size: 1.45rem;
   }
 }

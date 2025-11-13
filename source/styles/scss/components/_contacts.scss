@@ -1,6 +1,16 @@
+@use "../global/mixin" as *;
+
 .contacts__link {
   display: flex;
   gap: 8px;
   font-weight: 500;
   align-items: center;
+}
+
+@include mobile {
+  .contacts__info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
 }

@@ -17,7 +17,7 @@
 
 .nav__wrapper-one {
   width: 46rem;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .nav__wrapper-two {
@@ -68,5 +68,11 @@
     &--user {
       display: none;
     }
+  }
+}
+
+@include mobile {
+  .nav__wrapper-two {
+    display: none;
   }
 }

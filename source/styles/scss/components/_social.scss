@@ -1,9 +1,21 @@
+@use "../global/mixin" as *;
+
 .social {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .social__link {
   display: flex;
   align-items: center;
+}
+
+@include mobile {
+  .social {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
 }

@@ -18,3 +18,13 @@
     row-gap: 8px;
   }
 }
+
+@include mobile {
+  .footer-site {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
