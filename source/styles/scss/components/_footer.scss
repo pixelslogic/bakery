@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .footer {
   padding: 46px 0;
@@ -15,4 +16,5 @@
   display: flex;
   flex-direction: row;
   gap: 40px;
+  align-items: center;
 }

@@ -1,3 +1,5 @@
+@use "../global/mixin" as *;
+
 .catalog-btn__svg {
   display: none;
 }
@@ -11,4 +13,21 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
+}
+
+@include tablet {
+  .catalog-btn__svg {
+    &--open {
+      display: block;
+    }
+  }
+
+  .catalog-btn__text {
+    display: none;
+  }
+
+  .catalog-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

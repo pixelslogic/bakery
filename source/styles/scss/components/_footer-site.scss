@@ -1,3 +1,5 @@
+@use "../global/mixin" as *;
+
 .footer-site {
   display: flex;
   flex-direction: row;
@@ -6,4 +8,13 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
+  flex-wrap: wrap;
+}
+
+@include tablet {
+  .footer-site {
+    width: 21.8rem;
+    column-gap: 1rem;
+    row-gap: 8px;
+  }
 }

@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/mixin" as *;
 
 .logo {
   display: flex;
@@ -13,4 +14,14 @@
   font-weight: bold;
   font-size: 18px;
   color: $brown-secondary;
+}
+
+@include tablet {
+  .logo__text {
+    display: none;
+  }
+
+  .logo {
+    padding-right: 0;
+  }
 }
