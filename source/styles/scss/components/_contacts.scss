@@ -1,11 +1,17 @@
 @use "../global/mixin" as *;
 @use "../global/viewports" as *;
+@use "../global/variables" as *;
 
 .contacts__link {
   display: flex;
   gap: 8px;
   font-weight: 500;
   align-items: center;
+  transition: color 0.4s ease;
+
+  &:hover {
+    color: $brown-primary;
+  }
 }
 
 .contacts__info {

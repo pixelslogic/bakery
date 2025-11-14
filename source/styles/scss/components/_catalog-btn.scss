@@ -1,5 +1,6 @@
 @use "../global/mixin" as *;
 @use "../global/viewports" as *;
+@use "../global/variables" as *;
 
 .catalog-btn__svg {
   display: block;
@@ -33,6 +34,11 @@
   width: 2.5rem;
   height: 2.5rem;
   order: 3;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brown-secondary;
+  }
 
   @media (min-width: $tablet) {
     width: 2.5rem;

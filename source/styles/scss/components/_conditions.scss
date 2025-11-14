@@ -35,11 +35,11 @@
   height: 27.5rem;
 
   &--first {
-    background-image: url("../assets/images/img/conditions/img-1-mobile.jpg");
+    background-image: url("/assets/images/img/conditions/img-1-mobile.jpg");
   }
 
   &--second {
-    background-image: url("../assets/images/img/conditions/img-2-mobile.jpg");
+    background-image: url("/assets/images/img/conditions/img-2-mobile.jpg");
   }
 
   @media (min-width: $tablet) {
@@ -47,11 +47,11 @@
     height: 27.5rem;
 
     &--first {
-      background-image: url("../assets/images/img/conditions/img-1-tablet.jpg");
+      background-image: url("/assets/images/img/conditions/img-1-tablet.jpg");
     }
 
     &--second {
-      background-image: url("../assets/images/img/conditions/img-2-tablet.jpg");
+      background-image: url("/assets/images/img/conditions/img-2-tablet.jpg");
     }
   }
 
@@ -60,11 +60,11 @@
     height: 33rem;
 
     &--first {
-      background-image: url("../assets/images/img/conditions/img-1.jpg");
+      background-image: url("/assets/images/img/conditions/img-1.jpg");
     }
 
     &--second {
-      background-image: url("../assets/images/img/conditions/img-2.jpg");
+      background-image: url("/assets/images/img/conditions/img-2.jpg");
     }
   }
 }
