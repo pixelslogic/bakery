@@ -99,11 +99,16 @@
 
 .conditions__subtitle {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 150%;
   color: $white;
-  margin: 1.5rem 3.6rem;
+  margin: 1.5rem 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet) {
+    font-size: 2rem;
+    margin: 1.5rem 3.6rem;
+  }
 }

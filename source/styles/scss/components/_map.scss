@@ -33,6 +33,11 @@
   align-items: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+  }
 }
 
 .map__title {
