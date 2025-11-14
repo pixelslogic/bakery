@@ -1,4 +1,5 @@
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .contacts__link {
   display: flex;
@@ -7,10 +8,13 @@
   align-items: center;
 }
 
-@include mobile {
-  .contacts__info {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-self: end;
+.contacts__info {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: end;
+
+  @media (min-width: $tablet) {
+    display: block;
+    order: 3;
   }
 }

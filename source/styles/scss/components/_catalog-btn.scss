@@ -1,51 +1,47 @@
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .catalog-btn__svg {
+  display: block;
+
+  &--open {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+.catalog-btn__text {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .catalog-btn {
   border-radius: 0.25rem;
   padding: 0.5rem;
-  width: 8.75rem;
-  height: 2.5rem;
   border: none;
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-}
+  width: 2.5rem;
+  height: 2.5rem;
+  order: 3;
 
-@include tablet {
-  .catalog-btn__svg {
-    &--open {
-      display: block;
-    }
-  }
-
-  .catalog-btn__text {
-    display: none;
-  }
-
-  .catalog-btn {
+  @media (min-width: $tablet) {
     width: 2.5rem;
     height: 2.5rem;
-  }
-}
-
-@include mobile {
-  .catalog-btn__svg {
-    &--open {
-      display: block;
-    }
+    order: 2;
   }
 
-  .catalog-btn__text {
-    display: none;
-  }
-
-  .catalog-btn {
-    width: 2.5rem;
+  @media (min-width: $desktop) {
+    width: 8.75rem;
     height: 2.5rem;
-    order: 3;
   }
 }

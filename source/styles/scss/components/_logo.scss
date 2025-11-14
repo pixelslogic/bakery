@@ -1,12 +1,24 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  gap: 17px;
-  padding-right: 24px;
-  align-items: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding-right: 0;
+  order: 1;
+
+  @media (min-width: $tablet) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    padding-right: 24px;
+    align-items: center;
+  }
 }
 
 .logo__text {
@@ -14,27 +26,14 @@
   font-weight: bold;
   font-size: 18px;
   color: $brown-secondary;
-}
+  display: none;
 
-@include tablet {
-  .logo__text {
+  @media (min-width: $tablet) {
     display: none;
   }
 
-  .logo {
-    padding-right: 0;
-  }
-}
-
-@include mobile {
-  .logo__text {
-    display: none;
-  }
-
-  .logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    padding-right: 0;
-    order: 1;
+  @media (min-width: $desktop) {
+    display: block;
+    text-wrap-mode: nowrap;
   }
 }

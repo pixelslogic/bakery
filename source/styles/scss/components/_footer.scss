@@ -1,5 +1,6 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .footer {
   padding: 46px 0;
@@ -7,9 +8,17 @@
 }
 
 .footer__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer__nav {
@@ -17,18 +26,13 @@
   flex-direction: row;
   gap: 2.5rem;
   align-items: center;
-}
+  display: contents;
 
-@include mobile {
-  .footer__wrapper {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
     align-items: center;
-  }
-
-  .footer__nav {
-    display: contents;
+    order: 2;
   }
 }

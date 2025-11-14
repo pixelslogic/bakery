@@ -1,11 +1,12 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .search {
   position: relative;
   width: 100%;
-  max-width: 22rem;
   height: 2.5rem;
+  order: 2;
 }
 
 .search__input {
@@ -51,11 +52,5 @@
   &:hover .search__icon,
   &:focus .search__icon {
     fill: $black;
-  }
-}
-
-@include mobile {
-  .search {
-    order: 2;
   }
 }

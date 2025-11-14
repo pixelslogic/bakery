@@ -1,5 +1,6 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .banner {
   background-repeat: no-repeat;
@@ -17,33 +18,22 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 150%;
-}
+  font-size: 1.38rem;
+  min-height: 12.5rem;
+  background-image: url("../assets/images/img/banner/bg-mobile.jpg");
 
-.banner__title {
-  margin-top: 1rem;
-}
+  @media (min-width: $tablet) {
+    min-height: 12.5rem;
+    font-size: 2rem;
+    background-image: url("../assets/images/img/banner/bg-tablet.jpg");
+  }
 
-@include desktop {
-  .banner {
-    max-width: 80.5rem;
+  @media (min-width: $desktop) {
     min-height: 12.5rem;
     background-image: url("../assets/images/img/banner/bg.jpg");
   }
 }
 
-@include tablet {
-  .banner {
-    max-width: 48rem;
-    min-height: 12.5rem;
-    font-size: 2rem;
-    background-image: url("../assets/images/img/banner/bg-tablet.jpg");
-  }
-}
-
-@include mobile {
-  .banner {
-    font-size: 1.38rem;
-    min-height: 12.5rem;
-    background-image: url("../assets/images/img/banner/bg-mobile.jpg");
-  }
+.banner__title {
+  margin-top: 1rem;
 }

@@ -1,9 +1,23 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .card__list {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 0;
+    max-width: 50rem;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 67.5rem;
+  }
 }
 
 .card__wrapper {
@@ -11,14 +25,22 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 84px 0 40px 0;
+  margin: 2.5rem 0 2.5rem 0;
+
+  @media (min-width: $desktop) {
+    margin: 84px 0 40px 0;
+  }
 }
 
 .card__title {
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 1.7rem;
   line-height: 150%;
   margin: 0;
+
+  @media (min-width: $desktop) {
+    font-size: 2.25rem;
+  }
 }
 
 .card__text {
@@ -35,25 +57,14 @@
   line-height: 150%;
 }
 
-@include tablet {
-  .card__item {
-    &--hidden {
+.card__item {
+  &--hidden {
+    @media (min-width: $tablet) {
       display: none;
     }
-  }
-}
 
-@include mobile {
-  .card__wrapper {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-
-  .card__title {
-    font-size: 1.7rem;
-  }
-
-  .card__list {
-    flex-direction: column;
-    gap: 2.5rem;
+    @media (min-width: $desktop) {
+      display: block;
+    }
   }
 }

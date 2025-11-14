@@ -1,5 +1,6 @@
 @use "../global/variables" as *;
 @use "../global/mixin" as *;
+@use "../global/viewports" as *;
 
 .nav {
   display: flex;
@@ -21,7 +22,12 @@
 }
 
 .nav__wrapper-two {
-  width: 30rem;
+  display: none;
+
+  @media (min-width: $tablet) {
+    width: 30rem;
+    display: block;
+  }
 }
 
 .nav__link {
@@ -34,7 +40,12 @@
   gap: 8px;
 
   &--user {
-    flex-direction: row;
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
@@ -51,10 +62,8 @@
 
 .nav__icon-btn {
   display: none;
-}
 
-@include tablet {
-  .nav__icon-btn {
+  @media (min-width: $tablet) {
     display: flex;
     background-color: $brown-primary;
     border-radius: 0.25rem;
@@ -64,15 +73,7 @@
     border: none;
   }
 
-  .nav__link {
-    &--user {
-      display: none;
-    }
-  }
-}
-
-@include mobile {
-  .nav__wrapper-two {
+  @media (min-width: $desktop) {
     display: none;
   }
 }
