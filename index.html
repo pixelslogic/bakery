@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тёплый Хлеб</title>
-  <script type="module" crossorigin src="./assets/main-LB-vN1lF.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BMvQDzge.css">
+  <script type="module" crossorigin src="./assets/main-zRUI5lCM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-Cum4vnR-.css">
 </head>
 <body>
   <header class="header">
@@ -14,7 +14,7 @@
         <div class="nav__wrapper-one">
           <a class="logo" href="#">
             <svg class="logo__svg" width="40" height="35">
-              <use href="./assets/sprite-C_-yFVNI.svg#logo"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#logo"></use>
             </svg>
             <span class="logo__text">
               Тёплый Хлеб
@@ -23,23 +23,24 @@
 
           <button class="catalog-btn button" type="button" aria-label="catalog button">
             <svg class="catalog-btn__svg catalog-btn__svg--open" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#burger"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#burger"></use>
             </svg>
 
             <svg class="catalog-btn__svg catalog-btn__svg--close" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#burger-close"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#burger-close"></use>
             </svg>
             <span class="catalog-btn__text">Каталог</span>
           </button>
 
-          <form class="search" action="#" method="get">
+          <form class="search" action="#" method="get"> 
             <button type="submit" class="search__btn" aria-label="Поиск">
               <svg class="search__icon" width="20" height="20">
-                <use href="./assets/sprite-C_-yFVNI.svg#search"></use>
+                <use href="./assets/sprite-C0ENAPXr.svg#search"></use>
               </svg>
             </button>
             <input type="text" class="search__input" placeholder="Найти товар">
           </form>
+          <div class="search-results"></div>
         </div>
 
         <div class="nav__wrapper-two">
@@ -47,15 +48,18 @@
             <li class="nav__item">
               <a class="nav__link" href="#">
                 <svg class="nav__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
-                <span class="nav__text">Избранное</span>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Избранное</span>
+                  <span class="nav__counter nav__counter--favorite">0</span>
+                </div>
               </a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">
                 <svg class="nav__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#box"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#box"></use>
                 </svg>
                 <span class="nav__text">Заказы</span>
               </a>
@@ -63,9 +67,12 @@
             <li class="nav__item">
               <a class="nav__link" href="#">
                 <svg class="nav__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#orders"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#orders"></use>
                 </svg>
-                <span class="nav__text">Корзина</span>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Корзина</span>
+                  <span class="nav__counter">0</span>
+                </div>
               </a>
             </li>
             <li class="nav__item">
@@ -77,14 +84,41 @@
                 </picture>
                 <span class="nav__text nav__text--user">Пользователь</span>
                 <svg class="nav__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#arrow"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
                 </svg>
               </div>
               <div class="nav__icon-btn">
                 <svg class="nav__icon-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#log-in"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#log-in"></use>
                 </svg>
               </div>
+            </li>
+          </ul>
+          <ul class="nav-mobile">
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Каталог</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Избранное</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Заказы</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Корзина</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Авторизация</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -102,7 +136,7 @@
           <button class="card__text">
             <span class="card__subtitle">Все акции</span>
             <svg class="card__svg" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#arrow"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
             </svg>
           </button>
         </div>
@@ -139,7 +173,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -179,7 +213,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -219,7 +253,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -259,7 +293,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -275,7 +309,7 @@
           <button class="card__text">
             <span class="card__subtitle">Все новинки</span>
             <svg class="card__svg" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#arrow"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
             </svg>
           </button>
         </div>
@@ -307,7 +341,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -342,7 +376,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -377,7 +411,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -412,7 +446,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -428,7 +462,7 @@
           <button class="card__text">
             <span class="card__subtitle">Все покупки</span>
             <svg class="card__svg" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#arrow"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
             </svg>
           </button>
         </div>
@@ -459,7 +493,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -493,7 +527,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -527,7 +561,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -561,7 +595,7 @@
 
               <button class="product-card__favorite" aria-label="Добавить в избранное">
                 <svg class="product-card__favorite-svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#heart"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
                 </svg>
               </button>
 
@@ -611,17 +645,7 @@
             <button class="map__btn" type="button">г.Сортавала</button>
             <button class="map__btn" type="button">г.Пудож</button>
           </div>
-          <div class="map__image">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width:1280px)" srcset="./assets/images/img/map/map.webp" width="1120" height="400"> -->
-              <source type="image/jpeg" media="(min-width:1280px)" srcset="./assets/map-CUspDQso.jpg" width="1120" height="400">
-              <!-- <source type="image/webp" media="(min-width:768px)" srcset="./assets/images/img/map/map-tablet.webp" width="728" height="354"> -->
-              <source type="image/jpeg" media="(min-width:768px)" srcset="./assets/map-tablet-BxwopmhW.jpg" width="728" height="354">
-              <!-- <source type="image/webp" media="(max-width:767px)" srcset="./assets/images/img/map/map-mobile.webp" width="288" height="354"> -->
-              <source type="image/jpeg" media="(max-width:767px)" srcset="./assets/map-mobile-D0VtjZ0i.jpg" width="288" height="354">
-              <img src="./assets/map-mobile-D0VtjZ0i.jpg" alt="Карта" width="1120" height="400" loading="lazy">
-            </picture>
-          </div>
+          <div class="map__interactive-map" id="map"></div>
         </div>
       </section>
       <section class="conditions">
@@ -642,7 +666,7 @@
       <div class="footer__wrapper">
         <a class="logo" href="#">
           <svg class="logo__svg" width="40" height="35">
-            <use href="./assets/sprite-C_-yFVNI.svg#logo"></use>
+            <use href="./assets/sprite-C0ENAPXr.svg#logo"></use>
           </svg>
           <span class="logo__text">
             Тёплый Хлеб
@@ -671,7 +695,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">instagram link</span>
                 <svg class="social__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#instagram"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#instagram"></use>
                 </svg>
               </a>
             </li>
@@ -679,7 +703,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">vkontakte link</span>
                 <svg class="social__svg" width="24" height="24">
-                  <use href="./assets/sprite-C_-yFVNI.svg#vkontakte"></use>
+                  <use href="./assets/sprite-C0ENAPXr.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -688,7 +712,7 @@
         <div class="contacts__info">
           <a class="contacts__link" href="tel:+88005557575">
             <svg class="social__svg" width="24" height="24">
-              <use href="./assets/sprite-C_-yFVNI.svg#phone"></use>
+              <use href="./assets/sprite-C0ENAPXr.svg#phone"></use>
             </svg>
             <span class="contacts__text">8 800 555 75 75</span>
           </a>
