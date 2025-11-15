@@ -1,0 +1,52 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.nav-mobile {
+  position: fixed;
+  top: 3.9rem;
+  left: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: $white;
+  padding: 40px 20px 20px;
+  margin: 0;
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+
+  @media (min-width: $tablet) {
+    top: 4.5rem;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav-mobile.active {
+  left: 0;
+}
+
+.nav-mobile__item {
+  margin-bottom: 0;
+  border-bottom: 1px solid $gray-light;
+}
+
+.nav-mobile__link {
+  display: block;
+  padding: 16px 0;
+  text-decoration: none;
+  color: $black;
+  font-size: 16px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $brown-primary;
+  }
+}
+
+.nav-mobile__text {
+  font-weight: 500;
+}

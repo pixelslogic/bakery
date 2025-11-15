@@ -8,6 +8,8 @@
   padding: 11px 0;
   align-items: center;
   background-color: $white;
+  position: relative;
+  z-index: 1000;
 }
 
 .nav__wrapper-one,
@@ -22,11 +24,12 @@
 }
 
 .nav__wrapper-two {
-  display: none;
+  width: 0;
+  display: block;
+  position: relative;
 
   @media (min-width: $tablet) {
     width: 30rem;
-    display: block;
   }
 }
 
@@ -50,8 +53,13 @@
 }
 
 .nav__list {
-  gap: 24px;
-  justify-content: flex-end;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+  }
 }
 
 .nav__text {

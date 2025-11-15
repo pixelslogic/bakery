@@ -20,17 +20,17 @@
   line-height: 150%;
   font-size: 1.38rem;
   min-height: 12.5rem;
-  background-image: url("/assets/images/img/banner/bg-mobile.jpg");
+  background-image: url("/assets/images/img/main/banner/bg-mobile.jpg");
 
   @media (min-width: $tablet) {
     min-height: 12.5rem;
     font-size: 2rem;
-    background-image: url("/assets/images/img/banner/bg-tablet.jpg");
+    background-image: url("/assets/images/img/main/banner/bg-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     min-height: 12.5rem;
-    background-image: url("/assets/images/img/banner/bg.jpg");
+    background-image: url("/assets/images/img/main/banner/bg.jpg");
   }
 }
 

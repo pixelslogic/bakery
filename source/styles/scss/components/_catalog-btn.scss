@@ -2,17 +2,50 @@
 @use "../global/viewports" as *;
 @use "../global/variables" as *;
 
-.catalog-btn__svg {
-  display: block;
+.catalog-btn__icon {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
-  &--open {
+.catalog-btn__svg {
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.catalog-btn__svg--open {
+  opacity: 1;
+  visibility: visible;
+
+  @media (min-width: $desktop) {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.catalog-btn__svg--close {
+  opacity: 0;
+  visibility: hidden;
+
+  @media (min-width: $desktop) {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.catalog-btn.active {
+  .catalog-btn__svg--open {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .catalog-btn__svg--close {
+    opacity: 1;
+    visibility: visible;
+
     @media (min-width: $desktop) {
       display: none;
     }
-  }
-
-  &--close {
-    display: none;
   }
 }
 
@@ -31,10 +64,15 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
-  width: 2.5rem;
-  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
   order: 3;
   cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 
   &:hover {
     background-color: $brown-secondary;
