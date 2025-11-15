@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   
-  console.log('Script loaded');
-  
   const searchInput = document.querySelector('.search__input');
   const searchForm = document.querySelector('.search');
   const resultsBox = document.querySelector('.search-results');
 
-  console.log('searchInput:', searchInput);
-  console.log('resultsBox:', resultsBox);
-
   if (!searchInput || !resultsBox) {
-    console.error('Элементы поиска не найдены!');
     return;
   }
 
@@ -48,18 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
     'Пончик глазированный',
     'Пирожное "Картошка"',
     'Рулет бисквитный шоколадный',
-    'Пирожное “Шоколадное” с трюфельным кремом'
+    'Пирожное "Шоколадное" с трюфельным кремом'
   ];
 
-  console.log('Products array:', allProducts);
-
   function showResults(text) {
-    console.log('showResults called with:', text);
-    
     resultsBox.innerHTML = "";
 
     if (text.trim() === "") {
-      console.log('Empty text, hiding results');
       resultsBox.style.cssText = 'display: none !important';
       return;
     }
@@ -68,10 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       item.toLowerCase().includes(text.toLowerCase())
     );
 
-    console.log('Filtered results:', filtered);
-
     if (filtered.length === 0) {
-      console.log('No results found');
       resultsBox.innerHTML = '<div class="search-results__item search-results__item--empty">Ничего не найдено</div>';
       resultsBox.style.cssText = 'display: block !important';
       return;
@@ -90,17 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
       resultsBox.appendChild(div);
     });
 
-    console.log('Showing results box');
     resultsBox.style.cssText = 'display: block !important';
   }
 
   searchInput.addEventListener('input', (e) => {
-    console.log('Input event:', e.target.value);
     showResults(e.target.value);
   });
 
   searchInput.addEventListener('focus', () => {
-    console.log('Focus event');
     if (searchInput.value.trim() !== "") {
       showResults(searchInput.value);
     }
@@ -114,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('Form submit prevented');
   });
 
   const favoriteButtons = document.querySelectorAll('.product-card__favorite');
