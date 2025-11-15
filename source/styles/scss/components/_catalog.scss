@@ -70,3 +70,28 @@
 .catalog__svg {
   transform: rotate(270deg);
 }
+
+.catalog-list__item {
+  transition: opacity 0.4s ease;
+  
+  &:hover {
+    opacity: 0.95;
+  }
+}
+
+.catalog-list__img {
+  transition: opacity 0.4s ease;
+}
+
+.catalog-list__item:hover .catalog-list__img {
+  opacity: 0.95;
+}
+
+.catalog-list__link {
+  display: block;
+  transition: opacity 0.4s ease;
+  
+  &:hover {
+    opacity: 0.95;
+  }
+}
