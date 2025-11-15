@@ -62,12 +62,12 @@ buttons.forEach(button => {
     addMarkers(coords);
 
     map.flyTo({
-      center: [coords[0][0] + 0.025, coords[0][1] - 0.05],
+      center: [coords[0][0] + 0.01, coords[0][1] - 0.005],
       zoom: 12
     });
   });
 });
 
 addMarkers(cityMarkers['г.Петрозаводск']);
-map.setCenter([cityMarkers['г.Петрозаводск'][0][0] + 0.025, cityMarkers['г.Петрозаводск'][0][1] - 0.005]);
+map.setCenter([cityMarkers['г.Петрозаводск'][0][0] + 0.01, cityMarkers['г.Петрозаводск'][0][1] - 0.005]);
 map.setZoom(12);
