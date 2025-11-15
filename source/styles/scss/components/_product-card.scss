@@ -168,3 +168,21 @@
 .product-card__star {
   color: $brown-primary;
 }
+
+.product-card__favorite-svg {
+  color: $black;
+  fill: transparent;
+  transition: fill 0.4s ease, stroke 0.4s ease;
+}
+
+.product-card__favorite:hover .product-card__favorite-svg {
+  stroke: $red;
+}
+
+.product-card__favorite {
+  color: $gray-light; // серый по умолчанию
+}
+
+.product-card__favorite.active {
+  color: $red; // красный при клике
+}

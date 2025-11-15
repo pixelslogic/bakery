@@ -7,6 +7,10 @@
   width: 100%;
   height: 2.5rem;
   order: 2;
+
+  &:hover .search__input {
+    border-color: $black;
+  }
 }
 
 .search__input {

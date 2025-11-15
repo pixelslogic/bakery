@@ -21,6 +21,7 @@
 .nav__wrapper-one {
   width: 46rem;
   gap: 1rem;
+  position: relative;
 }
 
 .nav__wrapper-two {
@@ -83,5 +84,30 @@
 
   @media (min-width: $desktop) {
     display: none;
+  }
+}
+
+.nav__wrapper-basket {
+  position: relative;
+}
+
+.nav__counter {
+  position: absolute;
+  bottom: 42px;
+  right: 3px;
+  background-color: $brown-primary;
+  color: $white;
+  font-size: 0.60rem;
+  font-weight: 500;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $rubik;
+
+  &--favorite {
+    right: 12px;
   }
 }

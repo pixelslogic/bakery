@@ -55,6 +55,12 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;
+  cursor: pointer;
+
+  &:hover {
+    color: $brown-primary;
+    stroke: $brown-primary;
+  }
 }
 
 .card__item {

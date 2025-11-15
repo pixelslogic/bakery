@@ -31,7 +31,7 @@
             <span class="catalog-btn__text">Каталог</span>
           </button>
 
-          <form class="search" action="#" method="get">
+          <form class="search" action="#" method="get"> 
             <button type="submit" class="search__btn" aria-label="Поиск">
               <svg class="search__icon" width="20" height="20">
                 <use href="./assets/images/icon/sprite.svg#search"></use>
@@ -39,6 +39,7 @@
             </button>
             <input type="text" class="search__input" placeholder="Найти товар">
           </form>
+          <div class="search-results"></div>
         </div>
 
         <div class="nav__wrapper-two">
@@ -48,7 +49,10 @@
                 <svg class="nav__svg" width="24" height="24">
                   <use href="./assets/images/icon/sprite.svg#heart"></use>
                 </svg>
-                <span class="nav__text">Избранное</span>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Избранное</span>
+                  <span class="nav__counter nav__counter--favorite">0</span>
+                </div>
               </a>
             </li>
             <li class="nav__item">
@@ -64,7 +68,10 @@
                 <svg class="nav__svg" width="24" height="24">
                   <use href="./assets/images/icon/sprite.svg#orders"></use>
                 </svg>
-                <span class="nav__text">Корзина</span>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Корзина</span>
+                  <span class="nav__counter">0</span>
+                </div>
               </a>
             </li>
             <li class="nav__item">
