@@ -176,13 +176,10 @@
 }
 
 .product-card__favorite:hover .product-card__favorite-svg {
-  stroke: $red;
+  color: $red;
 }
 
-.product-card__favorite {
-  color: $gray-light; // серый по умолчанию
-}
-
-.product-card__favorite.active {
-  color: $red; // красный при клике
+.product-card__favorite-svg.active {
+  color: $red;
+  fill: $red;
 }

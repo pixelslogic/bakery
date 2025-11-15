@@ -3,3 +3,4 @@ import './burger.js';
 import './map.js';
 import './counter.js';
 import './search.js';
+import './favorite.js';
