@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тёплый Хлеб</title>
-  <meta name="description" content="Онлайн магазин пекарни Тёплый Хлеб">
+  <meta name="description" content="Каталог товаров пекарни Тёплый Хлеб">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -21,16 +21,13 @@
             <svg class="logo__svg" width="40" height="35">
               <use href="./assets/images/icon/sprite.svg#logo"></use>
             </svg>
-            <span class="logo__text">
-              Тёплый Хлеб
-            </span>
+            <span class="logo__text">Тёплый Хлеб</span>
           </a>
 
           <button class="catalog-btn button" type="button" aria-label="catalog button">
             <svg class="catalog-btn__svg catalog-btn__svg--open" width="24" height="24">
               <use href="./assets/images/icon/sprite.svg#burger"></use>
             </svg>
-
             <svg class="catalog-btn__svg catalog-btn__svg--close" width="24" height="24">
               <use href="./assets/images/icon/sprite.svg#burger-close"></use>
             </svg>
@@ -133,15 +130,19 @@
   <main class="main">
     <div class="container">
       <div class="catalog__nav">
-        <span class="catalog__text">Главная</span>
+        <a class="catalog__text" href="index.html">Главная</a>
         <svg class="catalog__svg" width="24" height="24">
           <use href="./assets/images/icon/sprite.svg#arrow"></use>
         </svg>
-        <span class="catalog__text">Каталог</span>
+        <a class="catalog__text" href="index.html#catalog">Каталог</a>
+        <svg class="catalog__svg" width="24" height="24">
+          <use href="./assets/images/icon/sprite.svg#arrow"></use>
+        </svg>
+        <span class="catalog__text" id="breadcrumb-category">Категория</span>
       </div>
 
       <section class="filter">
-        <h2 class="filter__title title">Пирожные</h2>
+        <h2 class="filter__title title" id="category-title">Загрузка...</h2>
         <div class="filter__categories">
           <button class="filter__category-btn filter__category-btn--active" data-category="our-production">
             <span>Товары нашего производства</span>
@@ -204,38 +205,35 @@
           </form>
     
           <div class="card__wrapper-two">
+            <!-- Сетка товаров -->
             <ul class="card__list" id="products-list">
               <li class="card__item">
                 <p>Загрузка товаров...</p>
               </li>
             </ul>
+            
             <button class="card__show-btn" type="button">Показать ещё</button>
+            
             <nav class="pagination" aria-label="Пагинация">
               <ul class="pagination__list">
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" aria-label="Первая страница" data-action="first">«</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" aria-label="Предыдущая страница" data-action="prev">‹</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn pagination__btn--active" type="button" data-page="1">1</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" data-page="2">2</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" aria-current="page" data-page="3">3</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" aria-label="Следующая страница" data-action="next">›</button>
                 </li>
-
                 <li class="pagination__item">
                   <button class="pagination__btn" type="button" aria-label="Последняя страница" data-action="last">»</button>
                 </li>
@@ -244,6 +242,7 @@
           </div>
         </div>
       </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -252,9 +251,7 @@
           <svg class="logo__svg" width="40" height="35">
             <use href="./assets/images/icon/sprite.svg#logo"></use>
           </svg>
-          <span class="logo__text">
-            Тёплый Хлеб
-          </span>
+          <span class="logo__text">Тёплый Хлеб</span>
         </a>
         <nav class="footer__nav">
           <ul class="footer-site">
