@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тёплый Хлеб</title>
+  <meta name="description" content="Каталог товаров пекарни Тёплый Хлеб">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-CbP1lKpP.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-Gv9TMI2V.png">
+  <link rel="manifest" href="./assets/site-BwHFeIBa.webmanifest">
+  <link rel="preload" href="./assets/Rubik-Regular-DiJG_9Tc.woff2" as="font" type="font/woff2" crossorigin>
+  <script type="module" crossorigin src="./assets/main-Ds2lOEFC.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BxVtkray.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__wrapper-one">
+          <a class="logo" href="index.html">
+            <svg class="logo__svg" width="40" height="35">
+              <use href="./assets/sprite-C0ENAPXr.svg#logo"></use>
+            </svg>
+            <span class="logo__text">Тёплый Хлеб</span>
+          </a>
+
+          <button class="catalog-btn button" type="button" aria-label="catalog button">
+            <svg class="catalog-btn__svg catalog-btn__svg--open" width="24" height="24">
+              <use href="./assets/sprite-C0ENAPXr.svg#burger"></use>
+            </svg>
+            <svg class="catalog-btn__svg catalog-btn__svg--close" width="24" height="24">
+              <use href="./assets/sprite-C0ENAPXr.svg#burger-close"></use>
+            </svg>
+            <span class="catalog-btn__text">Каталог</span>
+          </button>
+
+          <form class="search" action="#" method="get"> 
+            <button type="submit" class="search__btn" aria-label="Поиск">
+              <svg class="search__icon" width="20" height="20">
+                <use href="./assets/sprite-C0ENAPXr.svg#search"></use>
+              </svg>
+            </button>
+            <input type="text" class="search__input" placeholder="Найти товар">
+          </form>
+          <div class="search-results"></div>
+        </div>
+
+        <div class="nav__wrapper-two">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#heart"></use>
+                </svg>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Избранное</span>
+                  <span class="nav__counter nav__counter--favorite">0</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#box"></use>
+                </svg>
+                <span class="nav__text">Заказы</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#orders"></use>
+                </svg>
+                <div class="nav__wrapper-basket">
+                  <span class="nav__text">Корзина</span>
+                  <span class="nav__counter">0</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <div class="nav__link nav__link--user">
+                <picture>
+                  <source srcset="data:image/webp;base64,UklGRtwEAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSMIAAAABgBDZdt3mQngQxMRikjCQGSgMZAaCIAiGIAgPwoPwkrTV504BRMQEYDKmpuZuveWI9fIyH9Ya1sjlC2tYcJov1cfU5cvLmNy+sctI9633wOWbyx9P337+EnSfyY/qhAVAcEoBKkcGlMMQnTRmltRYWmdRYzH/d43FlKU3lpZYcmQ5YBwKZI4KCEcAUBgqAIjt0/AD574Hfi+7Cv6+93QMSt9xywhQ1hXMPnWNJcyHuqIIloaqY5YF64/curmbtnRgElZQOCD0AwAAsBYAnQEqKAAoAD4ZCIJBIQcakgQAYSgCdMvG66QuzG9/yAO114Jv43dqnzAfpf/VeAA/WvrefQY/Y70zP2A+DD9jPRVpe/0f8Yc4V9j/rWZV/E3gueH/x/+ffldqI35ge6v+S8HaNn+8fbB8V/+H9x3uA+aP9H/XPgD/jv8r/xP9d/bH+zf//lJf11PHDWQ5cQZXjKj+mQ0BO6HTEpN09bPVrcU6z4dz9O3A2C/fiM0TWfBYhiCxdDrhsvGYAAD+//7mmX3R08fHnD2xWgTUnR5f8b0YyxLK+38o/MS/g86EZn4Z2fEk3eP5DZ21IPFJ3y6Ztldhe5WaFsEpP/ifR90t+RMTgXVPuMzFK+6mXfhrcNMdFABZq17AeVPeUB0InGcKRKieW6/yoPPhjkNLWOULpw7EZhZuuYqcOzjyc2ynf3QgaH9JzptcBxlAfXmskvwV+3UWihP/j7FOQhXl/gqg9pZOeslgVoJf8cBZB38uK9k2ojYToRkJNlw44zd+GOb58cCAt3Z1pB3t+/sNrpar6FsjH/5KlWCSvGLL0A7mV8EHAkdHm/n7G005D7HIVBkEqEwoPGtJjnmQ5gO3ssyh/X45Du76czwA2ikj++Pf/5aSlZWPenAX6L43nvuo5hsFMf20zX7Te/XiTVik8uNWMHDhcREQ/sjsyQ2psz+Za9tlKPHhq83qZJD4TmDrkeXxu4EfWf2WWS6i6wh/aVc33v/me3puCw92wX/9fn19KvmbtnGo/usV8SmfBeJQ53QrDXeyaJuqVtUAequLowiI/3MDi/K+rvjEcErexTalyyNjRHCFdBWqgrJP8WHYZHaaK47FJ4vo73RXdqwPIGaDXv7kRgW8rK7jt2BaCxDaGzkxQ0gn45Y77bpOWx3FlycSBKzNSdu42x1IqwKeVtp08CZVpIal7qWKFKW0RmmtVWdAO9fd6WN3IxRu3Fk2HlyBxmpSfnYa7f8BHuXu+eDuAgCyeCpTTQCG0rFfb/8FFsmIIE0MS/vxsLyXST8OmgkDZkugQsIF3nAKQMsiH/ie+eSD+6UaNH3Fg5X+0KRgCMJ6Uq82jjiWIMX992txrqjXkmmfmWzOYLLlqXiDpU6P0DKPUbaqgZaqjYXcIHZ9dqG30BoV/uVK/f3DJhA9/2W+my0//Ff1OXClimQoNkz+kOn96YC6H44zo9yv1o83dvnoONMvwK1npcD3pN5tD+ZwJIMB2fx2+uXL04Xo9uDxYDTjAFQBohg8kzOwg1az/+8r/FPL7jco1cdXvtNQ/v27eWc383/+HqX0L/y1s/+1tvzO+//S5f+wA7/7dv0zkYnXtQCLNWb7afhFmIvMT0AAAA== 1x" type="image/webp">
+                  <source srcset="data:image/png;base64,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 1x" type="image/jpeg">
+                  <img class="nav__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAnySURBVHgBrVh9bFvVFf/d+96znS/HidOkaZzgtLRFbWnTsWZjg8bdBPuDoRWKENvYVLQxPrSpYdrGYJoS0DYmpI1Ug30AEyC0oU2Ir7IxJKQmLR2sjSBdC/2kcRunTerYcWwntt/X3bnPbVo3aZx4nOo1fvfr/e6555zfuYehRBFChOjPOvoREsJsEzZ81OoT1MgYS9ATZlwJ09sANfXRey9KELaQwQTKZ8PuhGltM7NTPug6tVoESLloFM+32QyC2RBcAXOVQfV4JOBe6nxEgp/nJ+cH0AFm290im9lmZSdpEumJK+c7wTgHVzUwRYGwBWwjR812wfLCtmiOCqWyCorqen6+QIsCJHCdlj7VZacmfY5yGDvfDtXtATQP+t/fg3ff3Y3YWBx1dbW47vqN2PDF60Fahp3NyCO/sCDhtrkNzVsT5lzrpr4XUKpYQvTo42NCj50V+nh0+pmKjggp3T99UJSXucXiRX6xcllQXLV8qVhBfxvqakWZx0X9P3HGZcZGCuY7z9io0KfSsvsJLFSD8kjpedWIj4aYohaCtiyoVT40NQdQXVkBj9vtaHM2yek5pNNTGBqKwEgloChKwaeZTRZN67uqa6QjbZLONS+AtrA/NOJn2xhXCtsJnNvfAF+1F8HmJgdsMeG0xslTESRSSeTiUXrnhQNoc4IzAlnXSwA3zZh/aYMQVo8eG50BToq70ostt9yMQGODAy6b08GKWLFNztEcaMSWzTdLu5s5gElNCujJeGi24+aF4MRWPRHbxi851nN9ODsWw9tvv+MYvUEAb+i4FslkesZYTv3x8WTB8fzzX+9gIh4HE2x2kKYJM5PulE45K0DqCFqZyS5FcMwmqqcMf372j/CTl54ID6E10ITfP/0Uwic+BjkGjg+exNDpEYTJ3iKjo3j9L88imc5AOXekVzQvwZ+eehLcpc26Pp09xFSaNG53SR+Yxn4BoPmcHotvzcfcmbvUvD50XHcd2tvW4PHfPA5WVgVkxmkoadum3es2RiJhuNwu1F+5FjCkvXuwtu0aHP1kEK0tASxuaMDOvt2Ow1xOpL+5aup66JQemNag1J6RShE4hsuGRrLJKMW5jIxrZRVoX38NAsvWorZxKfb1/RsiGUNDZSXqg60INAUQCK6Blxxqz7u9SMZGsHJZK0aiUUBRMJcwAmiZuc7zWjxnbKRWwyBGmNvi8+bDYEaH8d7OtyBcXkha44lRmHI+9WcjQxg8PADVVQVDzwDjI3D56ygy0DhNyatoLiEMVjoJxbdoG7094mjQyuohzopMJEmm0lAVDrW6Bvv79+Hqteuwbv0GREizyrnNecrc2LtrNxYHAvjarVuQ01yOWjRVxXgiieLkJWQ8k6HOcRYusxIrmwwKxi8/h/qMWAT/eOVFHD0Rxs43Xoe9aCn+/trrGIqcxq+efokSApdzPONZE1+46Ta0t7fThjL43UtvIDVp4PDxQbz35itkf+MoJpLbifclWYQY/delx6Ldefu73AyyhNigY3vRsTE0tjQjw8uxqq0dt99xB37d/TD0yHEnKHNVwY7+Q7j7e/fhvu//AI/+6B7YiQRiEwlUV1RKAwOvbaLkwZ4bJZ2I5vV3MtvMvWpNTGwWc9ifQgBNCVDRnBgoY6JlGvA0tMgzQO70KbIv0iDFT5m10KJQm5fDJvsz0pNOXHQSBppnk3aYt5F+z81CRBjkzQ2vcWFZQVHELExyBNtTA81XJeOU4/ssS+1xAhAdccBJL88cP0AB1yBnUmBETsCKJR1wUiRNqovIWcr9RcHlAQqZsrVxYVrBYnxFdgDPkivw7e9sw1AiRUG7ArxSK0gSOJ2A58pVYO5yTDuCJx8k1KoKHI6cwbrPh+Dx12M+wmTWSVk6p6zXh3lK/8GP8ZmNX8HbvX2kpQubkslq+kA/skf+i9T+PQUEKoft2v0fbPzqbbQhVjzMXASQCdvHjKmkELlc0Qmaz4/VV610NDV4cgjpRIxi3rE8lTkXERXZkwfhDiyn0ybtUmZqWTY8rSvgrfYTNQZg0dCDBw7BmIgX/R7ZElRvLZmI4ImFXE3ksUra6ujYCE/zMhmvzk03UbbsaseTJThbmkXzUtwY+hJampqc94WIkP8oP+SUViUgbCxUImdGcfstW+C+YmXeceSijoPAeXe3rMCdd3wdx8OnFnYzuwgiMVuYM42uhQvbnCPlHg8GDh3Fyiuvwifhk1DrGqAtaaKnBUPxCWpfib0DB1BRXo7SRIYmTgAVdy9ECQhJ3JqKYUqtWletwUMP/RxrVm9AhW8xNn/zu/D7fXATu5Qs3IkAA9Lf9gvOUapwGfNMHb986AFygH2YTAzj4OGPgNL2PC1KfnO9XN74FXd5opRFJDvI1F86gK0bMEaGYZweBvQURin7ZqxE6yM24m666DPW56hO8Xh6uCnmvek83dk4dmIQP3vgHlR73AX9ueEhfLinD81LGp0smy/0hCQ1Klqv/Jmfyfl2w0W3flF8x5Kyj52Oo/2GzUiMRfHg/XfDTBfeSyQgdy6FN19+ER/s2wsQ945OTE3T3lwiN65UyDwTj0wDlPdRT2VVj2XPrcPJrAUf0dfwY5/DMx0pKmNUg9W3QhCTCLoDC8vIP1SzYVTiQHUTGpvqsb+zATvuXYfUlJ2nljmcUpZVFJfn+fNlkYvuJMJnppODMHK+i2nMqb1Q8YcpNj549CZsWF2P3LjuMIodPQH7G39A2fLrnYwZRtZZkmlljrlk+56E1vcMBG2CEatoFTZSS74M940/BHPYpDD+StujokCYa+5NMwDmsVidemzsCaZIxcpPECtQ9my981uo778A7m/NM8e00LhsAgaBY9feBaW1nQpHWVgH34L6wStQqhshLrnCMsoH7XQc9pbHoCwLAanYBa1SnUerrNp6cb1mhlFQ+vVELj7ayatqYZ45AOWv91PmUksfusx1cfrDBoGdpD0RaLcXc5qzBDSZgFXpB/vWc1DItCzKId2+RdO3ucsClEJhY2dmxy9Cro92QHgbUGogLyp0lWAjR2De9RIlFesHCNz6S4fM6v+E+hbls7cOWJkJoMRYNi98pPVcVT20llW99LpptjGzA5RevWT1ev7w3h49eSZ/fPgUgdKmeXoMuZpmlP14V4+qematbDlDi61lUr0m92Z3l9b/chB0k/u/OMypwegwx8+Q929PlC8PyQLm9jmnzGNZp/KgT0a7rB3dW/mRXVBq6FamuOYBljljZHaMbBLW1ATsjfdA67i3R82XgItS7EKL6EFDn+yy+v8WEgOvBpV4hBJpd/4ewl15mpFC8UyQpgSxifQvM9AG9do7E8qKDgLGt88HWEkALwHbQYlpyI4PthmxcFCZjAehZ506tnB7E8y7OKHUBgdYdUMvNUkP7UMJ8j/nZ5b5rX0FpAAAAABJRU5ErkJggg==" alt="user photo" width="40" height="40">
+                </picture>
+                <span class="nav__text nav__text--user">Пользователь</span>
+                <svg class="nav__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
+                </svg>
+              </div>
+              <button class="nav__icon-btn" data-modal-show="login" type="button">
+                <svg class="nav__icon-svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#log-in"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="nav-mobile">
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Каталог</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Избранное</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Заказы</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <a class="nav-mobile__link" href="#">
+                <span class="nav-mobile__text">Корзина</span>
+              </a>
+            </li>
+            <li class="nav-mobile__item">
+              <button class="nav-mobile__link" data-modal-show="login" type="button">
+                <span class="nav-mobile__text">Авторизация</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="catalog__nav">
+        <a class="catalog__text" href="index.html">Главная</a>
+        <svg class="catalog__svg" width="24" height="24">
+          <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
+        </svg>
+        <a class="catalog__text" href="index.html#catalog">Каталог</a>
+        <svg class="catalog__svg" width="24" height="24">
+          <use href="./assets/sprite-C0ENAPXr.svg#arrow"></use>
+        </svg>
+        <span class="catalog__text" id="breadcrumb-category">Категория</span>
+      </div>
+
+      <section class="filter">
+        <h2 class="filter__title title" id="category-title">Загрузка...</h2>
+        <div class="filter__categories">
+          <button class="filter__category-btn filter__category-btn--active" data-category="our-production">
+            <span>Товары нашего производства</span>
+          </button>
+          <button class="filter__category-btn" data-category="order">
+            <span>На заказ</span>
+          </button>
+          <button class="filter__category-btn" data-category="no-gmo">
+            <span>Без ГМО</span>
+          </button>
+        </div>
+            
+        <div class="filter__wrapper">
+          <form class="filter-form">
+            <h3 class="filter-form__title">Фильтр</h3>
+            <div class="filter-form__block">
+              <div class="filter-form__clear">
+                <label class="filter-form__label">Цена</label>
+                <button class="filter-form__button" type="button">Очистить</button>
+              </div>
+
+              <div class="filter-form__inputs">
+                <input type="number" min="1" value="1">
+                <span class="dash">—</span>
+                <input type="number" min="1" value="100">
+              </div>
+
+              <div class="filter-form__price">
+                <div class="filter-form__track"></div>
+                <div class="filter-form__range" id="price-range"></div>
+                <input class="filter-form__input" type="range" min="1" max="100" value="1">
+                <input class="filter-form__input" type="range" min="1" max="100" value="100">
+              </div>
+            </div>
+
+            <div class="filter-form__block">
+              <label class="filter-form__checkbox">
+                <input type="checkbox"> Бисквитные
+              </label>
+              <label class="filter-form__checkbox">
+                <input type="checkbox"> Слоёные
+              </label>
+              <label class="filter-form__checkbox">
+                <input type="checkbox"> Заварные
+              </label>
+              <label class="filter-form__checkbox">
+                <input type="checkbox"> Песочные
+              </label>
+            </div>
+
+            <div class="filter-form__block">
+              <label class="filter-form__toggle">
+                <input type="checkbox" />
+                <span class="toggle"></span>
+                <span class="toggle-text">В наличии</span>
+              </label>
+            </div>
+
+            <button type="submit" class="filter-form__submit">Применить</button>
+          </form>
+    
+          <div class="card__wrapper-two">
+            <!-- Сетка товаров -->
+            <ul class="card__list" id="products-list">
+              <li class="card__item">
+                <p>Загрузка товаров...</p>
+              </li>
+            </ul>
+            
+            <button class="card__show-btn" type="button">Показать ещё</button>
+            
+            <nav class="pagination" aria-label="Пагинация">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" aria-label="Первая страница" data-action="first">«</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" aria-label="Предыдущая страница" data-action="prev">‹</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn pagination__btn--active" type="button" data-page="1">1</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" data-page="2">2</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" aria-current="page" data-page="3">3</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" aria-label="Следующая страница" data-action="next">›</button>
+                </li>
+                <li class="pagination__item">
+                  <button class="pagination__btn" type="button" aria-label="Последняя страница" data-action="last">»</button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a class="logo" href="#">
+          <svg class="logo__svg" width="40" height="35">
+            <use href="./assets/sprite-C0ENAPXr.svg#logo"></use>
+          </svg>
+          <span class="logo__text">Тёплый Хлеб</span>
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer-site">
+            <li>
+              <a class="footer-site__link" href="#visiting">О компании</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#explore">Контакты</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#video">Вакансии</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#gallery">Статьи</a>
+            </li>
+            <li>
+              <a class="footer-site__link" href="#tickets">Политика обработки персональных данных</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">instagram link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="#">
+                <span class="visually-hidden">vkontakte link</span>
+                <svg class="social__svg" width="24" height="24">
+                  <use href="./assets/sprite-C0ENAPXr.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts__info">
+          <a class="contacts__link" href="tel:+88005557575">
+            <svg class="social__svg" width="24" height="24">
+              <use href="./assets/sprite-C0ENAPXr.svg#phone"></use>
+            </svg>
+            <span class="contacts__text">8 800 555 75 75</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
