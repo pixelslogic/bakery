@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'source/index.html'),
         catalog: resolve(__dirname, 'source/catalog.html'),
+        filter: resolve(__dirname, 'source/filter.html'),
       },
     },
   },
