@@ -1,0 +1,52 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 4rem;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+    font-family: $rubik;
+    border: none;
+    color: $gray-hardest;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    cursor: pointer;
+
+    &--active {
+      color: $brown-primary;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__btn--double {
+      display: none;
+    }
+
+    &__btn--page {
+      min-width: 2.4rem;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.875rem;
+    }
+  }
+}

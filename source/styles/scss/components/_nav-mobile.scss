@@ -41,6 +41,8 @@
   color: $black;
   font-size: 16px;
   transition: color 0.2s ease;
+  background-color: transparent;
+  border: none;
 
   &:hover {
     color: $brown-primary;
@@ -49,4 +51,5 @@
 
 .nav-mobile__text {
   font-weight: 500;
+  font-family: $rubik;
 }

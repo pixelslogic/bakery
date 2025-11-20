@@ -4,3 +4,6 @@ import './map.js';
 import './counter.js';
 import './search.js';
 import './favorite.js';
+import './auth-modal.js';
+import './cards.js';
+import './renderCards.js';

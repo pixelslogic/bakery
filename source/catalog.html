@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тёплый Хлеб</title>
+  <meta name="description" content="Онлайн магазин пекарни Тёплый Хлеб">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -91,11 +92,11 @@
                   <use href="./assets/images/icon/sprite.svg#arrow"></use>
                 </svg>
               </div>
-              <div class="nav__icon-btn">
+              <button class="nav__icon-btn" data-modal-show="login" type="button">
                 <svg class="nav__icon-svg" width="24" height="24">
                   <use href="./assets/images/icon/sprite.svg#log-in"></use>
                 </svg>
-              </div>
+              </button>
             </li>
           </ul>
           <ul class="nav-mobile">
@@ -120,9 +121,9 @@
               </a>
             </li>
             <li class="nav-mobile__item">
-              <a class="nav-mobile__link" href="#">
+              <button class="nav-mobile__link" data-modal-show="login" type="button">
                 <span class="nav-mobile__text">Авторизация</span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -141,7 +142,7 @@
       <h2 class="catalog__title title">Каталог</h2>
       <ul class="catalog-list">
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=baking">
             <picture>
               <source srcset="./assets/images/img/catalog/baking.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/baking.jpeg 1x" type="image/jpeg">
@@ -151,7 +152,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=pastries">
             <picture>
               <source srcset="./assets/images/img/catalog/pies.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/pies.jpeg 1x" type="image/jpeg">
@@ -161,7 +162,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=cakes">
             <picture>
               <source srcset="./assets/images/img/catalog/cakes.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/cakes.jpeg 1x" type="image/jpeg">
@@ -171,7 +172,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=breakfasts">
             <picture>
               <source srcset="./assets/images/img/catalog/breakfasts.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/breakfasts.jpeg 1x" type="image/jpeg">
@@ -181,7 +182,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=sandwiches">
             <picture>
               <source srcset="./assets/images/img/catalog/sandwiches.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/sandwiches.jpeg 1x" type="image/jpeg">
@@ -191,7 +192,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=bread">
             <picture>
               <source srcset="./assets/images/img/catalog/bread.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/bread.jpeg 1x" type="image/jpeg">
@@ -201,7 +202,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=lemonades">
             <picture>
               <source srcset="./assets/images/img/catalog/lemonades.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/lemonades.jpeg 1x" type="image/jpeg">
@@ -211,7 +212,7 @@
           </a>
         </li>
         <li class="catalog-list__item">
-          <a class="catalog-list__link" href="#">
+          <a class="catalog-list__link" href="filter.html?category=drinks">
             <picture>
               <source srcset="./assets/images/img/catalog/drinks.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/drinks.jpeg 1x" type="image/jpeg">

@@ -28,3 +28,9 @@
 @use "./components/footer-site";
 //catalog
 @use "./components/catalog";
+//popup
+@use "./components/auth-modal";
+//filter
+@use "./components/filter";
+@use "./components/filter-form";
+@use "./components/pagination";
