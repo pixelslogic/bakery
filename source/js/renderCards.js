@@ -1,4 +1,5 @@
 import { getProductsByCategory } from './cards.js';
+import sprite from '../assets/images/icon/sprite.svg';
 
 class CategoryProducts {
     constructor() {
@@ -66,9 +67,9 @@ class CategoryProducts {
                     <a class="product-card__link" href="product.html?id=${product.id}">
                         <div class="product-card__image">
                             <picture>
-                                <source type="image/webp" srcset="${product.image}.webp 1x">
-                                <source type="image/jpeg" srcset="${product.image}.png 1x">
-                                <img src="${product.image}.png" alt="${product.name}" width="272" height="160" loading="lazy">
+                                <source type="image/webp" srcset="${product.imageWebp} 1x">
+                                <source type="image/jpeg" srcset="${product.imagePng} 1x">
+                                <img src="${product.imagePng}" alt="${product.name}" width="272" height="160" loading="lazy">
                             </picture>
                             ${badge ? `<span class="product-card__discount">${badge}</span>` : ''}
                         </div>
@@ -98,7 +99,7 @@ class CategoryProducts {
                         data-favorite
                     >
                         <svg class="product-card__favorite-svg" width="24" height="24">
-                            <use href="./assets/images/icon/sprite.svg#heart"></use>
+                            <use href="${sprite}#heart"></use>
                         </svg>
                     </button>
 
@@ -120,7 +121,7 @@ class CategoryProducts {
 
         for (let i = 0; i < 5; i++) {
             stars += `
-                <svg width="16" height="16" fill="${i < fullStars ? '#ffc107' : '#e0e0e0'}">
+                <svg width="16" height="16" fill="${i < fullStars ? '#b2793e' : '#e0e0e0'}">
                     <use href="./assets/images/icon/sprite.svg#star"></use>
                 </svg>
             `;
