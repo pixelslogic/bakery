@@ -4,7 +4,7 @@
 
 .product-card {
   width: 20rem;
-  height: 22rem;
+  height: 25rem;
   background: $white;
   border-radius: 4px;
   overflow: hidden;
@@ -33,7 +33,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    height: 11rem;
+
+    @media (min-width: $tablet) {
+      height: 8rem;
+    }
   }
 
   &__discount {

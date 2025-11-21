@@ -28,25 +28,30 @@
     font-family: $rubik;
     border: none;
     color: $gray-hardest;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background: transparent;
     cursor: pointer;
+
+    @media (min-width: $tablet) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
 
     &--active {
       color: $brown-primary;
     }
   }
 
-  @media (max-width: 480px) {
-    &__btn--double {
-      display: none;
-    }
+  // @media (max-width: $tablet) {
+  //   &__btn--double {
+  //     display: none;
+  //   }
 
-    &__btn--page {
-      min-width: 2.4rem;
-      padding: 0.35rem 0.5rem;
-      font-size: 0.875rem;
-    }
-  }
+  //   &__btn--page {
+  //     min-width: 2.4rem;
+  //     padding: 0.35rem 0.5rem;
+  //     font-size: 0.875rem;
+  //   }
+  // }
 }

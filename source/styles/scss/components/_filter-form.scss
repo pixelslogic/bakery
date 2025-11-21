@@ -31,6 +31,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
+  align-items: center;
 }
 
 .filter-form__button {
@@ -116,6 +117,21 @@
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 2.5rem;
+
+  &--checkboxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop) {
+      flex-direction: column;
+    }
+  }
 }
 
 .filter-form__submit {
@@ -129,8 +145,17 @@
   font-family: $rubik;
   cursor: pointer;
   font-size: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     opacity: 0.85;
   }
+}
+
+.filter-form__checkbox {
+  width: 8rem;
 }
