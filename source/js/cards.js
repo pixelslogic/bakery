@@ -23,6 +23,10 @@ import pastries15Png from '../assets/images/img/main/promo/pie.png';
 import pastries15Webp from '../assets/images/img/main/promo/pie.webp';
 import pastries16Png from '../assets/images/img/filter-page/img/pastries-3.png';
 import pastries16Webp from '../assets/images/img/filter-page/img/pastries-3.webp';
+import pastries17Png from '../assets/images/img/main/promo/donut.png';
+import pastries17Webp from '../assets/images/img/main/promo/donut.webp';
+import pastries18Png from '../assets/images/img/main/new/raspberry-muffin.png';
+import pastries18Webp from '../assets/images/img/main/new/raspberry-muffin.webp';
 
 import cakes21Png from '../assets/images/img/main/new/choco-cake.png';
 import cakes21Webp from '../assets/images/img/main/new/choco-cake.webp';
@@ -69,6 +73,8 @@ import bread55Png from '../assets/images/img/filter-page/img/bread-5.png';
 import bread55Webp from '../assets/images/img/filter-page/img/bread-5.webp';
 import bread56Png from '../assets/images/img/filter-page/img/bread-6.png';
 import bread56Webp from '../assets/images/img/filter-page/img/bread-6.webp';
+import bread57Png from '../assets/images/img/main/promo/bread.png';
+import bread57Webp from '../assets/images/img/main/promo/bread.webp';
 
 import lemonades61Png from '../assets/images/img/filter-page/img/lemonades-1.png';
 import lemonades61Webp from '../assets/images/img/filter-page/img/lemonades-1.webp';
@@ -146,7 +152,7 @@ export const productsDatabase = {
             badge: null
         },
         {
-            id: 5,
+            id: 6,
             name: 'Булочка с ветчиной и сыром',
             category: 'baking',
             price: 75,
@@ -224,6 +230,28 @@ export const productsDatabase = {
             imagePng: pastries16Png,
             imageWebp: pastries16Webp,
             rating: 4.8,
+            badge: null
+        },
+        {
+            id: 17,
+            name: 'Донатс',
+            category: 'pastries',
+            price: 48,
+            oldPrice: 54,
+            imagePng: pastries17Png,
+            imageWebp: pastries17Webp,
+            rating: 4.8,
+            badge: '-11%'
+        },
+        {
+            id: 18,
+            name: 'Маффин творожный с малиной',
+            category: 'pastries',
+            price: 74,
+            oldPrice: null,
+            imagePng: pastries18Png,
+            imageWebp: pastries18Webp,
+            rating: 4.9,
             badge: null
         }
     ],
@@ -431,7 +459,7 @@ export const productsDatabase = {
         },
         {
             id: 53,
-            name: 'Хлеб на закваске',
+            name: 'Хлеб Ржаной на закваске',
             category: 'bread',
             price: 75,
             oldPrice: null,
@@ -472,6 +500,17 @@ export const productsDatabase = {
             imageWebp: bread56Webp,
             rating: 4.6,
             badge: null
+        },
+        {
+            id: 57,
+            name: 'Хлеб "Рустик"',
+            category: 'bread',
+            price: 48,
+            oldPrice: 55,
+            imagePng: bread57Png,
+            imageWebp: bread57Webp,
+            rating: 4.6,
+            badge: '-13%'
         }
     ],
     

@@ -20,6 +20,7 @@ class CategoryProducts {
     init() {
         const urlParams = new URLSearchParams(window.location.search);
         this.currentCategory = urlParams.get('category') || 'pastries';
+
         this.updatePageInfo();
         this.renderProducts();
     }
@@ -51,10 +52,12 @@ class CategoryProducts {
             return;
         }
 
-        const html = products.map(product => this.createProductCard(product)).join('');
-        productsList.innerHTML = html;
+        productsList.innerHTML = products
+            .map(product => this.createProductCard(product))
+            .join('');
 
         this.initProductHandlers();
+        this.renderAllStars();
     }
 
     createProductCard(product) {
@@ -64,7 +67,7 @@ class CategoryProducts {
         return `
             <li class="card__item">
                 <div class="product-card">
-                    <a class="product-card__link" href="product.html?id=${product.id}">
+                    <a class="product-card__link" href="productCard.html?id=${product.id}">
                         <div class="product-card__image">
                             <picture>
                                 <source type="image/webp" srcset="${product.imageWebp} 1x">
@@ -88,7 +91,7 @@ class CategoryProducts {
 
                             <h3 class="product-card__title">${product.name}</h3>
 
-                            <div class="product-card__rating"></div>
+                            <div class="stars-svg" data-rating="${product.rating}"></div>
                         </div>
                     </a>
 
@@ -115,14 +118,23 @@ class CategoryProducts {
         `;
     }
 
-    renderRating(rating) {
+    renderAllStars() {
+        const containers = document.querySelectorAll('.stars-svg[data-rating]');
+        containers.forEach(container => {
+            const rating = parseFloat(container.dataset.rating);
+            container.innerHTML = this.renderStars(rating);
+        });
+    }
+
+    renderStars(rating) {
         const fullStars = Math.floor(rating);
         let stars = '';
 
         for (let i = 0; i < 5; i++) {
+            const color = i < fullStars ? '#b2793e' : '#e0e0e0';
             stars += `
-                <svg width="16" height="16" fill="${i < fullStars ? '#b2793e' : '#e0e0e0'}">
-                    <use href="./assets/images/icon/sprite.svg#star"></use>
+                <svg width="16" height="16">
+                    <use href="${sprite}#star" style="color: ${color}"></use>
                 </svg>
             `;
         }
@@ -131,16 +143,23 @@ class CategoryProducts {
     }
 
     initProductHandlers() {
-        document.querySelectorAll('[data-add-to-cart]').forEach(btn => {
+        const cartButtons = document.querySelectorAll('[data-add-to-cart]');
+        const favoriteButtons = document.querySelectorAll('[data-favorite]');
+
+        cartButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const productId = e.target.dataset.productId;
+                e.preventDefault();
+                e.stopPropagation();
+                const productId = e.currentTarget.dataset.productId;
                 this.addToCart(productId);
             });
         });
 
-        document.querySelectorAll('[data-favorite]').forEach(btn => {
+        favoriteButtons.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                const productId = e.target.dataset.productId;
+                e.preventDefault();
+                e.stopPropagation();
+                const productId = e.currentTarget.dataset.productId;
                 this.toggleFavorite(productId, e.currentTarget);
             });
         });
@@ -154,7 +173,6 @@ class CategoryProducts {
 }
 
 const categoryProducts = new CategoryProducts();
-window.categoryProducts = categoryProducts;
 
 document.addEventListener('DOMContentLoaded', () => {
     categoryProducts.init();

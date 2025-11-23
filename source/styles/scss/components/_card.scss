@@ -9,6 +9,7 @@
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2.5rem;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -20,6 +21,7 @@
   @media (min-width: $desktop) {
     max-width: 72rem;
     gap: 1.2rem;
+    margin-bottom: 7.6rem;
   }
 }
 

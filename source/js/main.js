@@ -7,3 +7,5 @@ import './favorite.js';
 import './auth-modal.js';
 import './cards.js';
 import './renderCards.js';
+import './comment-star.js';
+import './openCard.js';

@@ -137,17 +137,6 @@
     margin-bottom: 0.5rem;
   }
 
-  &__rating {
-    margin-bottom: 12px;
-    width: 85px;
-    height: 17px;
-    background-color: $brown-primary;
-    mask-image: url('/assets/images/icon/star.svg');
-    mask-repeat: repeat-x;
-    background-size: 17px 17px;
-    mask-size: 17px 17px;
-  }
-
   &__btn {
     display: inline-block;
     width: 100%;

@@ -26,6 +26,7 @@
 @use "./components/social";
 @use "./components/contacts";
 @use "./components/footer-site";
+@use "./components/stars-svg";
 //catalog
 @use "./components/catalog";
 //popup
@@ -34,3 +35,13 @@
 @use "./components/filter";
 @use "./components/filter-form";
 @use "./components/pagination";
+//card
+@use "./components/page-card";
+@use "./components/goods";
+@use "./components/table-nutrition";
+@use "./components/card-aside";
+@use "./components/reviews";
+@use "./components/user-review";
+@use "./components/rating";
+@use "./components/form-comment";
+@use "./components/rating-stars";

@@ -1,0 +1,27 @@
+.reviews {
+  margin-top: 7.5rem;
+}
+
+.reviews h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 150%;
+  margin: 0 0 2.5rem;
+}
+
+.reviews__stars {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.reviews__wrapper {
+  display: flex;
+}
+
+.reviews__rating {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.card-aside__item {
+  background-color: $white;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+
+.card-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-aside__price-wrapper span {
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 150%;
+  color: $black;
+}
+
+.card-aside__price-wrapper {
+  padding: 0.5rem;
+}
+
+.card-aside__wrapper {
+  display: flex;
+  justify-content: center;
+}

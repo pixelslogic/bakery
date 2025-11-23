@@ -1,0 +1,19 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.rating__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $black;
+  font-family: $rubik;
+}
+
+.rating__item span {
+  width: 1rem;
+  text-align: center;
+}

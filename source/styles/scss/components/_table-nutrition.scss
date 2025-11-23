@@ -1,0 +1,31 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.table-nutrition {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.table-nutrition__wrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+  width: 12rem;
+
+  &--right {
+    font-weight: 700;
+  }
+}
+
+.table-nutrition__wrapper span {
+  background-color: $gray-lightest;
+  padding: 0.5rem;
+
+  &:nth-child(2) {
+    background-color: transparent;
+  }
+}

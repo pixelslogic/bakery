@@ -1,0 +1,124 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
+.goods {
+  display: grid;
+  grid-template-columns: 36.5rem 23.5rem 10.5rem;
+  justify-content: space-between;
+}
+
+.goods__left {
+  background-color: $white;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  height: 31.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goods__price-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.goods__span {
+  font-weight: 400;
+  font-family: $rubik;
+
+  &--old {
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: $gray-hardest;
+  }
+
+  &--new {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 150%;
+    color: $black;
+  }
+}
+
+.goods__span-label {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+  font-family: $rubik;
+  color: $gray-light;
+}
+
+.goods__btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  background-color: $brown-primary;
+  margin-top: 1rem;
+  color: $white;
+  border-radius: 0.25rem;
+  font-family: $rubik;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  gap: 6rem;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+
+  &:hover {
+    background-color: $brown-secondary;
+  }
+}
+
+.goods__bonus {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: $brown-primary;
+  margin: 1rem 0;
+  gap: 3px;
+}
+
+.goods__btn-reduction {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border: none;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  color: $gray-hardest;
+  cursor: pointer;
+}
+
+.goods__text-reduction {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 150%;
+  text-align: center;
+  color: $gray-hardest;
+  font-family: $rubik;
+}
+
+.goods__right h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  font-family: $rubik;
+  color: $gray-hardest;
+  margin: 0 0 1rem;
+}

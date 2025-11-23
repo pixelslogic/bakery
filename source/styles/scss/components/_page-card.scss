@@ -1,0 +1,13 @@
+.page-card__info-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.page-card__share {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
