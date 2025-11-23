@@ -150,12 +150,9 @@ class ProductPage {
                   </div>
 
                   <div class="user-review__stars">
-                      <img 
-                          src="./assets/images/img/cardProduct/rating-${review.rating}.svg" 
-                          alt="Рейтинг ${review.rating} из 5" 
-                          width="96" 
-                          height="16"
-                      >
+                      <svg width="96" height="16">
+                        <use href="${sprite}#rating-${review.rating}"></use>
+                      </svg>
                       <span class="user-review__date">${review.date}</span>
                   </div>
 
