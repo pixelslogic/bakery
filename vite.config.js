@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'source/index.html'),
         catalog: resolve(__dirname, 'source/catalog.html'),
         filter: resolve(__dirname, 'source/filter.html'),
+        productCard: resolve(__dirname, 'source/productCard.html'),
       },
     },
   },
