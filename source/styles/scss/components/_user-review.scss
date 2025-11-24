@@ -1,4 +1,5 @@
 @use "../global/variables" as *;
+@use "../global/viewports" as *;
 
 .user-review__img {
   display: flex;
@@ -39,4 +40,12 @@
 
 .user-review__wrapper {
   margin-bottom: 2.5rem;
+
+  &:first-child {
+    margin-top: 2.5rem;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
 }

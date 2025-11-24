@@ -4,8 +4,12 @@
 
 .table-nutrition {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 1rem;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+  }
 }
 
 .table-nutrition__wrapper {
@@ -14,10 +18,24 @@
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 150%;
-  width: 12rem;
+
+  @media (min-width: $tablet) {
+    width: 12rem;
+  }
+
 
   &--right {
     font-weight: 700;
+  }
+
+  & br {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
   }
 }
 

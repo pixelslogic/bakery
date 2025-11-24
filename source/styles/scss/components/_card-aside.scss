@@ -9,9 +9,18 @@
 }
 
 .card-aside {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
 }
 
 .card-aside__price-wrapper span {
@@ -28,4 +37,14 @@
 .card-aside__wrapper {
   display: flex;
   justify-content: center;
+}
+
+.card-aside__wrapper img {
+  height: 5rem;
+  width: 8.6rem;
+
+  @media (min-width: $tablet) {
+    height: 6.25rem;
+    width: 10.6rem;
+  }
 }

@@ -4,18 +4,39 @@
 
 .goods {
   display: grid;
-  grid-template-columns: 36.5rem 23.5rem 10.5rem;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 23.6rem 20.6rem;
+    row-gap: 1rem;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 36.5rem 23.5rem 10.5rem;
+    row-gap: 0;
+  }
 }
 
 .goods__left {
   background-color: $white;
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
-  height: 31.25rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $desktop) {
+    height: 31.25rem;
+  }
+}
+
+.goods__center {
+  margin: 1.5rem 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .goods__price-wrapper {
@@ -70,12 +91,16 @@
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
-  gap: 6rem;
+  gap: 4rem;
   cursor: pointer;
   transition: background-color 0.4s ease;
 
   &:hover {
     background-color: $brown-secondary;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 6rem;
   }
 }
 
@@ -121,4 +146,14 @@
   font-family: $rubik;
   color: $gray-hardest;
   margin: 0 0 1rem;
+}
+
+.goods__right {
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: auto;
+  }
 }

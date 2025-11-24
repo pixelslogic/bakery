@@ -1,9 +1,18 @@
 @use "../global/variables" as *;
+@use "../global/viewports" as *;
 
 .form-comment {
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+
+  @media (min-width: $tablet) {
+    grid-column: span 2;
+    margin-top: 2.5rem;
+  }
+
+  @media (min-width: $desktop) {
+    grid-area: 2 / -2;
+  }
 }
 
 .form-comment button {
@@ -31,9 +40,13 @@
   border: 1px solid $gray-light;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
-  width: 43rem;
+  width: 100%;
   height: 6.25rem;
   font-family: $rubik;
+
+  @media (min-width: $desktop) {
+    width: 43rem;
+  }
 }
 
 .form-comment__wrapper {

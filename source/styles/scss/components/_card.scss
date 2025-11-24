@@ -58,9 +58,13 @@
   font-family: $rubik;
   color: $black;
   font-weight: 400;
-  font-size: 1rem;
   line-height: 150%;
   cursor: pointer;
+  font-size: 0.75rem;
+
+  @media (min-width: $tablet) {
+    font-size: 1rem;
+  }
 
   &:hover {
     color: $brown-primary;

@@ -1,3 +1,7 @@
+@use "../global/variables" as *;
+@use "../global/mixin" as *;
+@use "../global/viewports" as *;
+
 .reviews {
   margin-top: 7.5rem;
 }
@@ -17,11 +21,20 @@
 }
 
 .reviews__wrapper {
-  display: flex;
+  display: grid;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 10.5rem auto;
+    column-gap: 3rem;
+  }
+
+  @media (min-width: $desktop) {
+    column-gap: 9rem;
+  }
 }
 
-.reviews__rating {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
+// .reviews__rating {
+//   display: flex;
+//   flex-direction: column;
+//   margin: 0 auto;
+// }
