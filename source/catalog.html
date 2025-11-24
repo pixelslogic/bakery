@@ -10,7 +10,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <link rel="preload" href="./fonts/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <script type="module" crossorigin src="./js/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -136,7 +135,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/baking.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/baking.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/baking.jpg" alt="Категория выпечка" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/baking.jpg" alt="Категория выпечка" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Выпечка</h3>
           </a>
@@ -146,7 +145,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/pies.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/pies.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/pies.jpg" alt="Категория пирожные" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/pies.jpg" alt="Категория пирожные" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Пирожные</h3>
           </a>
@@ -156,7 +155,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/cakes.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/cakes.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/cakes.jpg" alt="Категория торты" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/cakes.jpg" alt="Категория торты" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Торты</h3>
           </a>
@@ -166,7 +165,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/breakfasts.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/breakfasts.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/breakfasts.jpg" alt="Категория завтраки" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/breakfasts.jpg" alt="Категория завтраки" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Завтраки</h3>
           </a>
@@ -176,7 +175,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/sandwiches.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/sandwiches.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/sandwiches.jpg" alt="Категория сэндвичи" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/sandwiches.jpg" alt="Категория сэндвичи" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Сэндвичи</h3>
           </a>
@@ -186,7 +185,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/bread.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/bread.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/bread.jpg" alt="Категория хлеб" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/bread.jpg" alt="Категория хлеб" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Хлеб</h3>
           </a>
@@ -196,7 +195,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/lemonades.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/lemonades.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/lemonades.jpg" alt="Категория морсы и лимонады" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/lemonades.jpg" alt="Категория морсы и лимонады" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Морсы и лимонады</h3>
           </a>
@@ -206,7 +205,7 @@
             <picture>
               <source srcset="./assets/images/img/catalog/drinks.webp 1x" type="image/webp">
               <source srcset="./assets/images/img/catalog/drinks.jpeg 1x" type="image/jpeg">
-              <img class="catalog-list__img" src="./assets/images/img/catalog/drinks.jpg" alt="Категория кофе и напитки" width="584" height="220">
+              <img loading="lazy" decoding="async" class="catalog-list__img" src="./assets/images/img/catalog/drinks.jpg" alt="Категория кофе и напитки" width="584" height="220">
             </picture>
             <h3 class="catalog-list__title">Кофе и напитки</h3>
           </a>
@@ -273,5 +272,6 @@
       </div>
     </div>
   </footer>
+  <script type="module" crossorigin src="./js/main.js"></script>
 </body>
 </html>

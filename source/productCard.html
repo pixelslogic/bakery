@@ -10,7 +10,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <link rel="preload" href="./fonts/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <script type="module" crossorigin src="./js/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -157,7 +156,7 @@
             <picture>
               <source type="image/webp" srcset="./assets/images/img/main/purchased/blini.png 1x">
               <source type="image/jpeg" srcset="./assets/images/img/main/purchased/blini.png 1x">
-              <img src="./assets/images/img/main/purchased/blini.png" alt="Блины" width="272" height="160">
+              <img fetchpriority="high" decoding="async" src="./assets/images/img/main/purchased/blini.png" alt="Блины" width="272" height="160">
             </picture>
           </div>
           <div class="goods__center">
@@ -210,7 +209,7 @@
                     <picture>
                       <source type="image/webp" srcset="./assets/images/img/filter-page/img/breakfast-2.webp 1x">
                       <source type="image/jpeg" srcset="./assets/images/img/filter-page/img/breakfast-2.png 1x">
-                      <img src="./assets/images/img/filter-page/img/breakfast-2.png" alt="Пай творожный" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/filter-page/img/breakfast-2.png" alt="Пай творожный" width="272" height="160">
                     </picture>
                   </div>
                   <div class="card-aside__price-wrapper">
@@ -224,7 +223,7 @@
                     <picture>
                       <source type="image/webp" srcset="./assets/images/img/filter-page/img/pastries-2.webp 1x">
                       <source type="image/jpeg" srcset="./assets/images/img/filter-page/img/pastries-2.png 1x">
-                      <img src="./assets/images/img/filter-page/img/pastries-2.png" alt="Пай творожный" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/filter-page/img/pastries-2.png" alt="Пай творожный" width="272" height="160">
                     </picture>
                   </div>
                   <div class="card-aside__price-wrapper">
@@ -238,7 +237,7 @@
                     <picture>
                       <source type="image/webp" srcset="./assets/images/img/filter-page/img/sandwiches-1.webp 1x">
                       <source type="image/jpeg" srcset="./assets/images/img/filter-page/img/sandwiches-1.png 1x">
-                      <img src="./assets/images/img/filter-page/img/sandwiches-1.png" alt="Пай творожный" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/filter-page/img/sandwiches-1.png" alt="Пай творожный" width="272" height="160">
                     </picture>
                   </div>
                   <div class="card-aside__price-wrapper">
@@ -252,7 +251,7 @@
                     <picture>
                       <source type="image/webp" srcset="./assets/images/img/main/new/raspberry-muffin.webp 1x">
                       <source type="image/jpeg" srcset="./assets/images/img/main/new/raspberry-muffin.png 1x">
-                      <img src="./assets/images/img/main/new/raspberry-muffin.png" alt="Пай творожный" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/main/new/raspberry-muffin.png" alt="Пай творожный" width="272" height="160">
                     </picture>
                   </div>
                   <div class="card-aside__price-wrapper">
@@ -283,7 +282,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/purchased/sirniki.webp 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/purchased/sirniki.png 1x">
-                    <img src="./assets/images/img/main/purchased/sirniki.png" alt="Сырники" width="272" height="160">
+                    <img loading="lazy" decoding="async" src="./assets/images/img/main/purchased/sirniki.png" alt="Сырники" width="272" height="160">
                   </picture>
                 </div>
 
@@ -317,7 +316,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/purchased/tiramisu.png 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/purchased/tiramisu.png 1x">
-                    <img src="./assets/images/img/main/purchased/tiramisu.png" alt="Тирамису" width="272" height="160">
+                    <img loading="lazy" decoding="async" src="./assets/images/img/main/purchased/tiramisu.png" alt="Тирамису" width="272" height="160">
                   </picture>
                 </div>
 
@@ -351,7 +350,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/purchased/blini.png 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/purchased/blini.png 1x">
-                    <img src="./assets/images/img/main/purchased/blini.png" alt="Блины" width="272" height="160">
+                    <img loading="lazy" decoding="async" src="./assets/images/img/main/purchased/blini.png" alt="Блины" width="272" height="160">
                   </picture>
                 </div>
 
@@ -385,7 +384,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/purchased/pirozhok.png 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/purchased/pirozhok.png 1x">
-                    <img src="./assets/images/img/main/purchased/pirozhok.png" alt="Сосиска в тесте" width="272" height="160">
+                    <img loading="lazy" decoding="async" src="./assets/images/img/main/purchased/pirozhok.png" alt="Сосиска в тесте" width="272" height="160">
                   </picture>
                 </div>
 
@@ -418,33 +417,33 @@
         <div class="reviews__wrapper">
           <div class="reviews__stars-wrapper">
             <div class="reviews__stars">
-              <img src="./assets/images/img/cardProduct/rating-5.svg" alt="Рейтинг 5 звезд" width="96" height="16">
+              <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-5.svg" alt="Рейтинг 5 звезд" width="96" height="16">
               <span class="reviews__text">5 из 5</span>
             </div>
             <ul class="rating">
               <li class="rating__item">
                 <span>5</span>
-                <img src="./assets/images/img/cardProduct/rating-5.svg" alt="Рейтинг 5 звезд" width="96" height="16">
+                <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-5.svg" alt="Рейтинг 5 звезд" width="96" height="16">
                 <span>2</span>
               </li>
               <li class="rating__item">
                 <span>4</span>
-                <img src="./assets/images/img/cardProduct/rating-4.svg" alt="Рейтинг 4 звезды" width="96" height="16">
+                <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-4.svg" alt="Рейтинг 4 звезды" width="96" height="16">
                 <span>1</span>
               </li>
               <li class="rating__item">
                 <span>3</span>
-                <img src="./assets/images/img/cardProduct/rating-3.svg" alt="Рейтинг 3 звезды" width="96" height="16">
+                <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-3.svg" alt="Рейтинг 3 звезды" width="96" height="16">
                 <span>0</span>
               </li>
               <li class="rating__item">
                 <span>2</span>
-                <img src="./assets/images/img/cardProduct/rating-2.svg" alt="Рейтинг 2 звезды" width="96" height="16">
+                <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-2.svg" alt="Рейтинг 2 звезды" width="96" height="16">
                 <span>0</span>
               </li>
               <li class="rating__item">
                 <span>1</span>
-                <img src="./assets/images/img/cardProduct/rating-1.svg" alt="Рейтинг 1 звезда" width="96" height="16">
+                <img loading="lazy" decoding="async" src="./assets/images/img/cardProduct/rating-1.svg" alt="Рейтинг 1 звезда" width="96" height="16">
                 <span>0</span>
               </li>
             </ul>
@@ -537,7 +536,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/promo/medovik.webp 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/promo/medovik.png 1x">
-                    <img src="./assets/images/img/main/promo/medovik.png" alt="Медовик" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/main/promo/medovik.png" alt="Медовик" width="272" height="160">
                   </picture>
                   <span class="product-card__discount">-6%</span>
                 </div>
@@ -577,7 +576,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/promo/bread.webp 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/promo/bread.png 1x">
-                    <img src="./assets/images/img/main/promo/bread.png" alt="Хлеб ржаной" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/main/promo/bread.png" alt="Хлеб ржаной" width="272" height="160">
                   </picture>
                   <span class="product-card__discount">-13%</span>
                 </div>
@@ -617,7 +616,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/promo/pie.webp 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/promo/pie.png 1x">
-                    <img src="./assets/images/img/main/promo/pie.png" alt="Пай творожный" width="272" height="160">
+                      <img loading="lazy" decoding="async" src="./assets/images/img/main/promo/pie.png" alt="Пай творожный" width="272" height="160">
                   </picture>
                   <span class="product-card__discount">-7%</span>
                 </div>
@@ -657,7 +656,7 @@
                   <picture>
                     <source type="image/webp" srcset="./assets/images/img/main/promo/donut.webp 1x">
                     <source type="image/jpeg" srcset="./assets/images/img/main/promo/donut.png 1x">
-                    <img src="./assets/images/img/main/promo/donut.png" alt="Донатс" width="272" height="160">
+                    <img loading="lazy" decoding="async" src="./assets/images/img/main/promo/donut.png" alt="Донатс" width="272" height="160">
                   </picture>
                   <span class="product-card__discount">-11%</span>
                 </div>
@@ -752,5 +751,6 @@
       </div>
     </div>
   </footer>
+  <script type="module" crossorigin src="./js/main.js"></script>
 </body>
 </html>
