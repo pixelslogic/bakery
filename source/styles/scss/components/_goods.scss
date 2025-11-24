@@ -4,10 +4,11 @@
 
 .goods {
   display: grid;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (min-width: $tablet) {
     grid-template-columns: 23.6rem 20.6rem;
+    justify-content: space-between;
     row-gap: 1rem;
   }
 
@@ -93,10 +94,15 @@
   line-height: 150%;
   gap: 4rem;
   cursor: pointer;
+  justify-content: center;
   transition: background-color 0.4s ease;
 
   &:hover {
     background-color: $brown-secondary;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop) {
